@@ -1,0 +1,14 @@
+[project]
+name = "pareto-iqa-quickstart"
+version = "0.1.0"
+description = "Quick start for the summer-school project on Pareto-optimal IQA for CLIP-based architectures"
+requires-python = ">=3.11"
+dependencies = [
+    "torch",
+    "transformers>=4.37",
+    "pandas",
+    "openpyxl",  # CID2013 ships its labels as xlsx
+    "numpy",
+    "scipy",
+    "pillow",
+]
