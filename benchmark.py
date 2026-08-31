@@ -40,6 +40,28 @@ def measure_flops(forward, x) -> int | None:
         return None
 
 
+def reset_peak_memory(device: torch.device) -> None:
+    """Forget the high-water mark, so the number belongs to this design only."""
+    if device.type == "cuda":
+        torch.cuda.reset_peak_memory_stats()
+    elif device.type == "mps":
+        torch.mps.empty_cache()
+
+
+def peak_memory_mb(device: torch.device) -> float | None:
+    """Peak allocation in MB, on the accelerators that report one.
+
+    CUDA and MPS both track it. On CPU there is no allocator to ask — the
+    process resident size is the whole interpreter, not this model — so the
+    column stays empty rather than carrying a number that means something else.
+    """
+    if device.type == "cuda":
+        return torch.cuda.max_memory_allocated() / 2**20
+    if device.type == "mps":
+        return torch.mps.driver_allocated_memory() / 2**20
+    return None
+
+
 def benchmark(backbone, head, image_size, device, batch_size, iterations) -> dict:
     def forward(x):
         with torch.no_grad():
@@ -51,6 +73,7 @@ def benchmark(backbone, head, image_size, device, batch_size, iterations) -> dic
         elif device.type == "mps":
             torch.mps.synchronize()
 
+    reset_peak_memory(device)
     one = torch.randn(1, 3, image_size, image_size, device=device)
     batch = torch.randn(batch_size, 3, image_size, image_size, device=device)
     for _ in range(5):
@@ -80,9 +103,7 @@ def benchmark(backbone, head, image_size, device, batch_size, iterations) -> dic
         "latency_ms_p50": float(np.percentile(latencies, 50)),
         "latency_ms_p95": float(np.percentile(latencies, 95)),
         "throughput_img_s": float(throughput),
-        "peak_memory_mb": (
-            torch.cuda.max_memory_allocated() / 2**20 if device.type == "cuda" else None
-        ),
+        "peak_memory_mb": peak_memory_mb(device),
         "params_backbone": sum(p.numel() for p in backbone.parameters()),
         "params_head": sum(p.numel() for p in head.parameters() if p.requires_grad),
     }

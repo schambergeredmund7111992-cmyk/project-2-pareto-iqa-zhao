@@ -4,7 +4,12 @@ An accurate quality metric is a large fine-tuned network; a cheap one loses
 accuracy. This project asks which architectures on top of a frozen encoder
 are worth what they cost to run.
 
-Five files to get you both numbers today:
+The full statement — research directions, how it is evaluated, what to hand
+in — is at
+[dreminm.github.io/iqa-summer-school/project-2.html](https://dreminm.github.io/iqa-summer-school/project-2.html).
+This repository is where you start from.
+
+Five scripts and a note to get you both numbers today:
 
 ```
 download_data.py   fetch a dataset and unpack it
@@ -18,7 +23,9 @@ datasets.md        what trains, what is held out, how cost is counted
 ## Run it
 
 ```
-uv venv --python 3.12 && uv pip install -e .
+uv venv --python 3.12
+source .venv/bin/activate        # .venv\Scripts\activate on Windows
+uv pip install -e .
 
 python download_data.py --list
 python download_data.py kadid10k --data-root ~/iqa-data     # 2.9 GB, start here
@@ -27,8 +34,12 @@ python train.py --data ~/iqa-data/kadid10k/labels.csv --epochs 5
 python benchmark.py --backbone clip-base
 ```
 
-The first run downloads CLIP weights (~600 MB). Use `--limit 2000` while you
-are still wiring things up.
+Use `--limit 2000` while you are still wiring things up — it samples that many
+training images at random, and leaves the held-out split whole.
+
+Downloads run in parallel byte ranges, because the mirror throttles a single
+sustained connection to a crawl. Pass `--connections 1` if a proxy dislikes
+range requests.
 
 ## The two axes
 
@@ -57,8 +68,17 @@ it finds and writes one table:
 | `group` | that type folded into one of eight distortion groups |
 
 Scores arrive on 1–5, 0–9 and 0–100 scales and one release counts backwards,
-so training on several sets at once needs the scaled column. Point it at
-several directories with `--out all.csv` for one table across them.
+so training on several sets at once needs the scaled column. The three
+training sets of this project, in one table:
+
+```
+python prepare_data.py ~/iqa-data/{kadid10k,koniq10k,spaq} --out ~/iqa-data/train.csv
+python train.py --data ~/iqa-data/train.csv --sampler by_dataset --epochs 5
+```
+
+`--sampler by_dataset` keeps the largest set from deciding the batch, and
+`train.py` prints SRCC and PLCC per dataset with their macro and the worst of
+the three, which is what this project reports.
 
 ## Splitting
 
@@ -70,21 +90,24 @@ train, val = split_by(data, "reference")        # or "random"
 sampler = make_sampler(train, "balanced")       # or "random", "by_level", "by_dataset"
 ```
 
-`split_by` keeps a pristine reference whole on one side, and that default
-matters: in KADID a hundred and twenty-five rows are one photograph seen
-through twenty-five distortions, so splitting them apart lets the model
-score the held-out ones by recognising the picture. On frozen features that
-is worth up to 0.44 SRCC — larger than the differences between the
-architectures you are comparing. Use `"random"` for photographs.
+`split_by` keeps a pristine reference whole on one side, and takes its share
+from every dataset separately. Both defaults matter. In KADID a hundred and
+twenty-five rows are one photograph seen through twenty-five distortions, so
+splitting them apart lets the model score the held-out ones by recognising
+the picture — on frozen features that is worth up to 0.44 SRCC, larger than
+the differences between the architectures you are comparing. And a reference
+means different things in different releases, one photograph here and a
+hundred and twenty-five rows there, so drawing the held-out share from the
+pool would let one release decide the split. Use `"random"` for photographs.
 
 ## Where to go next
 
 `train.py` and `benchmark.py` are short and meant to be edited.
-`--backbone clip-large` or `siglip`, `QualityMLP` for a different head — the
-head is the design space of this project — and `embed()` if you want patch
-tokens instead of the pooled embedding. The backbone is frozen, so caching
-features once changes the cost of experimenting, not the cost of the design
-you report.
+`--backbone clip-large`, `siglip2-base` or `siglip2-large`, `QualityMLP` for a
+different head — the head is the design space of this project — and `embed()`
+if you want patch tokens instead of the pooled embedding. The backbone is
+frozen, so caching features once changes the cost of experimenting, not the
+cost of the design you report.
 
 Which datasets train, which are held out and how cost is measured:
 [datasets.md](datasets.md).
