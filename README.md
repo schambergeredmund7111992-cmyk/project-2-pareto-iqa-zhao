@@ -8,7 +8,8 @@ fork adds **third-party no-reference metrics as external baselines**: every NR
 metric in [pyiqa](https://github.com/chaofengc/IQA-PyTorch) scored on the
 project's validation and held-out splits — 51 checkpoints, 48 reportable — plus
 Q-Align and Q-ReAlign, two VLM-based metrics, each with its own script and
-results.
+results. The original upstream README is kept at
+[README_upstream.md](README_upstream.md).
 
 ## The project
 
@@ -75,9 +76,9 @@ What the full sheet says:
 
 - **The cheapest are the best.** The frontier runs PIQE → BRISQUE → NIQE →
   PaQ-2-PiQ → MetaIQA → UNIQUE → LIQE-mix, and every point on it is under 10
-  GFLOPs. MANIQA costs 688× what UNIQUE does, needs 35.3 GB of memory against
-  205 MB, runs at 3 img/s against 1599, and scores 0.26 lower on the held-out
-  sets.
+  GFLOPs. MANIQA (KonIQ) is the counterexample: 6055.4 GFLOPs against
+  UNIQUE's 7.4, 35.3 GB of peak memory against 205 MB, 3 img/s against 1599 —
+  and it scores 0.26 lower on the held-out sets.
 - **Ranking depends on where you score it.** ARNIQA (KonIQ) is 4th in-domain
   and 23rd held out; MANIQA (KonIQ) is 43rd and 22nd. The in-domain macro
   rewards having trained on the target domain, and most of these checkpoints
