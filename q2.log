@@ -1,0 +1,182 @@
+=== arniqa on val === 03:37
+arniqa on 6240 images from the val split, native resolution (higher is better)
+  0/6240
+  500/6240
+  1000/6240
+  1500/6240
+  2000/6240
+  2500/6240
+  3000/6240
+  3500/6240
+  4000/6240
+  4500/6240
+  5000/6240
+  5500/6240
+  6000/6240
+
+    kadid10k       n   2000   SRCC 0.6956   PLCC 0.6951
+    koniq10k       n   2015   SRCC 0.8755   PLCC 0.8911
+    spaq           n   2225   SRCC 0.5928   PLCC 0.5893
+    macro                     SRCC 0.7213   PLCC 0.7252   worst 0.5928 on spaq
+    within-ref                SRCC 0.7509   (16 references)
+
+  latency batch 1     57.7 ms p50, 115.5 ms p95
+  throughput          3.6 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          23,512,129
+
+per-image scores -> arniqa_val.csv
+=== arniqa on heldout === 04:06
+arniqa on 8010 images from the val split, native resolution (higher is better)
+  0/8010
+  500/8010
+  1000/8010
+  1500/8010
+  2000/8010
+  2500/8010
+  3000/8010
+  3500/8010
+  4000/8010
+  4500/8010
+  5000/8010
+  5500/8010
+  6000/8010
+  6500/8010
+  7000/8010
+  7500/8010
+  8000/8010
+
+    agiqa3k        n   2982   SRCC 0.6177   PLCC 0.6920
+    clive          n   1162   SRCC 0.6762   PLCC 0.7194
+    csiq           n    866   SRCC 0.6290   PLCC 0.5940
+    tid2013        n   3000   SRCC 0.6010   PLCC 0.6389
+    macro                     SRCC 0.6354   PLCC 0.6508   worst 0.6010 on tid2013   (agiqa3k excluded)
+    within-ref                SRCC 0.6111   (354 references)
+
+  latency batch 1     25.4 ms p50, 77.0 ms p95
+  throughput          21.4 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          23,512,129
+
+per-image scores -> arniqa_heldout.csv
+=== liqe on val === 04:12
+Loading pretrained model LIQE from /home/sergey/.cache/torch/hub/pyiqa/liqe_koniq.pt
+liqe on 6240 images from the val split, native resolution (higher is better)
+  0/6240
+  500/6240
+  1000/6240
+  1500/6240
+  2000/6240
+  2500/6240
+  3000/6240
+  3500/6240
+  4000/6240
+  4500/6240
+  5000/6240
+  5500/6240
+  6000/6240
+
+    kadid10k       n   2000   SRCC 0.7024   PLCC 0.7036
+    koniq10k       n   2015   SRCC 0.9503   PLCC 0.9053
+    spaq           n   2225   SRCC 0.3072   PLCC 0.4120
+    macro                     SRCC 0.6533   PLCC 0.6736   worst 0.3072 on spaq
+    within-ref                SRCC 0.7854   (16 references)
+
+  latency batch 1     101.9 ms p50, 197.3 ms p95
+  throughput          3.8 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          151,277,313
+
+per-image scores -> liqe_val.csv
+=== liqe on heldout === 04:40
+Loading pretrained model LIQE from /home/sergey/.cache/torch/hub/pyiqa/liqe_koniq.pt
+liqe on 8010 images from the val split, native resolution (higher is better)
+  0/8010
+  500/8010
+  1000/8010
+  1500/8010
+  2000/8010
+  2500/8010
+  3000/8010
+  3500/8010
+  4000/8010
+  4500/8010
+  5000/8010
+  5500/8010
+  6000/8010
+  6500/8010
+  7000/8010
+  7500/8010
+  8000/8010
+
+    agiqa3k        n   2982   SRCC 0.6974   PLCC 0.7390
+    clive          n   1162   SRCC 0.8647   PLCC 0.8417
+    csiq           n    866   SRCC 0.8076   PLCC 0.7817
+    tid2013        n   3000   SRCC 0.6579   PLCC 0.7032
+    macro                     SRCC 0.7767   PLCC 0.7755   worst 0.6579 on tid2013   (agiqa3k excluded)
+    within-ref                SRCC 0.7069   (354 references)
+
+  latency batch 1     75.0 ms p50, 162.8 ms p95
+  throughput          16.1 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          151,277,313
+
+per-image scores -> liqe_heldout.csv
+=== nima on val === 04:48
+Loading pretrained model NIMA from /home/sergey/.cache/torch/hub/pyiqa/NIMA_InceptionV2_ava-b0c77c00.pth
+nima on 6240 images from the val split, native resolution (higher is better)
+  0/6240
+  500/6240
+  1000/6240
+  1500/6240
+  2000/6240
+  2500/6240
+  3000/6240
+  3500/6240
+  4000/6240
+  4500/6240
+  5000/6240
+  5500/6240
+  6000/6240
+
+    kadid10k       n   2000   SRCC 0.4639   PLCC 0.4918
+    koniq10k       n   2015   SRCC 0.5551   PLCC 0.5867
+    spaq           n   2225   SRCC 0.6043   PLCC 0.5991
+    macro                     SRCC 0.5411   PLCC 0.5592   worst 0.4639 on kadid10k
+    within-ref                SRCC 0.5400   (16 references)
+
+  latency batch 1     170.1 ms p50, 276.8 ms p95
+  throughput          5.4 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          54,321,834
+
+per-image scores -> nima_val.csv
+=== nima on heldout === 05:08
+Loading pretrained model NIMA from /home/sergey/.cache/torch/hub/pyiqa/NIMA_InceptionV2_ava-b0c77c00.pth
+nima on 8010 images from the val split, native resolution (higher is better)
+  0/8010
+  500/8010
+  1000/8010
+  1500/8010
+  2000/8010
+  2500/8010
+  3000/8010
+  3500/8010
+  4000/8010
+  4500/8010
+  5000/8010
+  5500/8010
+  6000/8010
+  6500/8010
+  7000/8010
+  7500/8010
+  8000/8010
+
+    agiqa3k        n   2982   SRCC 0.6574   PLCC 0.6894
+    clive          n   1162   SRCC 0.5710   PLCC 0.5688
+    csiq           n    866   SRCC 0.5855   PLCC 0.5852
+    tid2013        n   3000   SRCC 0.3577   PLCC 0.3997
+    macro                     SRCC 0.5047   PLCC 0.5179   worst 0.3577 on tid2013   (agiqa3k excluded)
+    within-ref                SRCC 0.6411   (354 references)
+
+  latency batch 1     70.1 ms p50, 111.6 ms p95
+  throughput          9.8 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          54,321,834
+
+per-image scores -> nima_heldout.csv
+### queue finished 05:23

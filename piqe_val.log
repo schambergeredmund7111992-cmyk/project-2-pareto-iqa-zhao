@@ -1,0 +1,25 @@
+piqe on 6240 images from the val split, native resolution (lower is better)
+  0/6240
+  500/6240
+  1000/6240
+  1500/6240
+  2000/6240
+  2500/6240
+  3000/6240
+  3500/6240
+  4000/6240
+  4500/6240
+  5000/6240
+  5500/6240
+  6000/6240
+
+    kadid10k       n   2000   SRCC 0.1928   PLCC 0.2404
+    koniq10k       n   2015   SRCC -0.2397   PLCC -0.2035
+    spaq           n   2225   SRCC -0.1525   PLCC -0.0733
+    macro                     SRCC -0.0664   PLCC -0.0121   worst -0.2397 on koniq10k
+    within-ref                SRCC 0.1994   (16 references)
+
+  latency batch 1     62.6 ms p50, 100.3 ms p95
+  throughput          6.3 img/s (the scoring loop, one image at a time, including image loading)
+
+per-image scores -> piqe_val.csv

@@ -1,0 +1,45 @@
+{
+  "project": "IQA Summer School Project 02",
+  "project_role": "external_vlm_baseline",
+  "model": "q-future/Q-ReAlign-Mini-0.8B",
+  "pyiqa_metric": "qrealign",
+  "score_direction": "higher_is_better",
+  "score_range": "[0, 1]",
+  "heldout_csv": "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/heldout.csv",
+  "heldout_rows": 8010,
+  "score_column": "scaled_subjective_score",
+  "datasets": [
+    "clive",
+    "csiq",
+    "tid2013",
+    "agiqa3k"
+  ],
+  "natural_datasets": [
+    "clive",
+    "csiq",
+    "tid2013"
+  ],
+  "natural_macro_excludes": [
+    "agiqa3k"
+  ],
+  "throughput_batch_size": 16,
+  "warmup_iterations": 5,
+  "latency_iterations": 30,
+  "throughput_iterations": 10,
+  "precision": "torch.bfloat16",
+  "device": "cuda",
+  "gpu": "NVIDIA L40",
+  "total_parameters": 852985920,
+  "trainable_parameters": 852985920,
+  "frozen_parameters": 0,
+  "flops_per_image": null,
+  "latency_p50_ms": 413.84832840412855,
+  "latency_p95_ms": 490.8172384835779,
+  "throughput_img_s": 3.8451093380590953,
+  "peak_vram_mb": 1851.55078125,
+  "throughput_method": "true tensor batch",
+  "manual_resize": false,
+  "preprocessing": "Q-ReAlign/PyIQA internal preprocessing",
+  "prediction_csv": "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/qrealign_heldout_predictions.csv",
+  "results_csv": "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/qrealign_project02_results.csv"
+}

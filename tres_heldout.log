@@ -1,0 +1,32 @@
+Loading pretrained model TReS from /home/sergey/.cache/torch/hub/pyiqa/tres_koniq-f0502926.pth
+tres on 8010 images from the val split, native resolution (higher is better)
+  0/8010
+  500/8010
+  1000/8010
+  1500/8010
+  2000/8010
+  2500/8010
+  3000/8010
+  3500/8010
+  4000/8010
+  4500/8010
+  5000/8010
+  5500/8010
+  6000/8010
+  6500/8010
+  7000/8010
+  7500/8010
+  8000/8010
+
+    agiqa3k        n   2982   SRCC 0.6493   PLCC 0.7354
+    clive          n   1162   SRCC 0.7709   PLCC 0.8054
+    csiq           n    866   SRCC 0.5723   PLCC 0.5732
+    tid2013        n   3000   SRCC 0.3931   PLCC 0.5079
+    macro                     SRCC 0.5787   PLCC 0.6288   worst 0.3931 on tid2013   (agiqa3k excluded)
+    within-ref                SRCC 0.6231   (354 references)
+
+  latency batch 1     139.2 ms p50, 245.3 ms p95
+  throughput          4.5 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          152,452,265
+
+per-image scores -> tres_heldout.csv

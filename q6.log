@@ -1,0 +1,184 @@
+=== wadiqam_nr on val === 03:37
+Loading pretrained model WaDIQaM from /home/sergey/.cache/torch/hub/pyiqa/WaDIQaM-NR-koniq-aaffea29.pth
+wadiqam_nr on 6240 images from the val split, native resolution (higher is better)
+  0/6240
+  500/6240
+  1000/6240
+  1500/6240
+  2000/6240
+  2500/6240
+  3000/6240
+  3500/6240
+  4000/6240
+  4500/6240
+  5000/6240
+  5500/6240
+  6000/6240
+
+    kadid10k       n   2000   SRCC 0.2286   PLCC 0.2893
+    koniq10k       n   2015   SRCC 0.8090   PLCC 0.8033
+    spaq           n   2225   SRCC 0.4353   PLCC 0.4286
+    macro                     SRCC 0.4909   PLCC 0.5070   worst 0.2286 on kadid10k
+    within-ref                SRCC 0.2364   (16 references)
+
+  latency batch 1     12.1 ms p50, 98.5 ms p95
+  throughput          4.5 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          5,238,562
+
+per-image scores -> wadiqam_nr_val.csv
+=== wadiqam_nr on heldout === 04:00
+Loading pretrained model WaDIQaM from /home/sergey/.cache/torch/hub/pyiqa/WaDIQaM-NR-koniq-aaffea29.pth
+wadiqam_nr on 8010 images from the val split, native resolution (higher is better)
+  0/8010
+  500/8010
+  1000/8010
+  1500/8010
+  2000/8010
+  2500/8010
+  3000/8010
+  3500/8010
+  4000/8010
+  4500/8010
+  5000/8010
+  5500/8010
+  6000/8010
+  6500/8010
+  7000/8010
+  7500/8010
+  8000/8010
+
+    agiqa3k        n   2982   SRCC 0.5861   PLCC 0.7243
+    clive          n   1162   SRCC 0.6675   PLCC 0.6631
+    csiq           n    866   SRCC 0.3626   PLCC 0.3860
+    tid2013        n   3000   SRCC 0.1544   PLCC 0.3517
+    macro                     SRCC 0.3948   PLCC 0.4669   worst 0.1544 on tid2013   (agiqa3k excluded)
+    within-ref                SRCC 0.5448   (354 references)
+
+  latency batch 1     5.7 ms p50, 29.9 ms p95
+  throughput          93.7 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          5,238,562
+
+per-image scores -> wadiqam_nr_heldout.csv
+=== paq2piq on val === 04:02
+Loading pretrained model PAQ2PIQ from /home/sergey/.cache/torch/hub/pyiqa/P2P_RoIPoolModel-fit.10.bs.120-ca69882e.pth
+paq2piq on 6240 images from the val split, native resolution (higher is better)
+  0/6240
+  500/6240
+  1000/6240
+  1500/6240
+  2000/6240
+  2500/6240
+  3000/6240
+  3500/6240
+  4000/6240
+  4500/6240
+  5000/6240
+  5500/6240
+  6000/6240
+
+    kadid10k       n   2000   SRCC 0.3285   PLCC 0.4158
+    koniq10k       n   2015   SRCC 0.7373   PLCC 0.7427
+    spaq           n   2225   SRCC 0.6223   PLCC 0.5722
+    macro                     SRCC 0.5627   PLCC 0.5769   worst 0.3285 on kadid10k
+    within-ref                SRCC 0.4421   (16 references)
+
+  latency batch 1     22.0 ms p50, 87.7 ms p95
+  throughput          5.5 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          11,704,897
+
+per-image scores -> paq2piq_val.csv
+=== paq2piq on heldout === 04:21
+Loading pretrained model PAQ2PIQ from /home/sergey/.cache/torch/hub/pyiqa/P2P_RoIPoolModel-fit.10.bs.120-ca69882e.pth
+paq2piq on 8010 images from the val split, native resolution (higher is better)
+  0/8010
+  500/8010
+  1000/8010
+  1500/8010
+  2000/8010
+  2500/8010
+  3000/8010
+  3500/8010
+  4000/8010
+  4500/8010
+  5000/8010
+  5500/8010
+  6000/8010
+  6500/8010
+  7000/8010
+  7500/8010
+  8000/8010
+
+    agiqa3k        n   2982   SRCC 0.5026   PLCC 0.5729
+    clive          n   1162   SRCC 0.7178   PLCC 0.7536
+    csiq           n    866   SRCC 0.5756   PLCC 0.6511
+    tid2013        n   3000   SRCC 0.4011   PLCC 0.5776
+    macro                     SRCC 0.5648   PLCC 0.6607   worst 0.4011 on tid2013   (agiqa3k excluded)
+    within-ref                SRCC 0.5460   (354 references)
+
+  latency batch 1     5.1 ms p50, 31.0 ms p95
+  throughput          25.8 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          11,704,897
+
+per-image scores -> paq2piq_heldout.csv
+=== tres on val === 04:26
+Loading pretrained model TReS from /home/sergey/.cache/torch/hub/pyiqa/tres_koniq-f0502926.pth
+tres on 6240 images from the val split, native resolution (higher is better)
+  0/6240
+  500/6240
+  1000/6240
+  1500/6240
+  2000/6240
+  2500/6240
+  3000/6240
+  3500/6240
+  4000/6240
+  4500/6240
+  5000/6240
+  5500/6240
+  6000/6240
+
+    kadid10k       n   2000   SRCC 0.4336   PLCC 0.4725
+    koniq10k       n   2015   SRCC 0.8423   PLCC 0.8448
+    spaq           n   2225   SRCC 0.4148   PLCC 0.4087
+    macro                     SRCC 0.5635   PLCC 0.5753   worst 0.4148 on spaq
+    within-ref                SRCC 0.4863   (16 references)
+
+  latency batch 1     366.9 ms p50, 591.8 ms p95
+  throughput          2.5 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          152,452,265
+
+per-image scores -> tres_val.csv
+=== tres on heldout === 05:08
+Loading pretrained model TReS from /home/sergey/.cache/torch/hub/pyiqa/tres_koniq-f0502926.pth
+tres on 8010 images from the val split, native resolution (higher is better)
+  0/8010
+  500/8010
+  1000/8010
+  1500/8010
+  2000/8010
+  2500/8010
+  3000/8010
+  3500/8010
+  4000/8010
+  4500/8010
+  5000/8010
+  5500/8010
+  6000/8010
+  6500/8010
+  7000/8010
+  7500/8010
+  8000/8010
+
+    agiqa3k        n   2982   SRCC 0.6493   PLCC 0.7354
+    clive          n   1162   SRCC 0.7709   PLCC 0.8054
+    csiq           n    866   SRCC 0.5723   PLCC 0.5732
+    tid2013        n   3000   SRCC 0.3931   PLCC 0.5079
+    macro                     SRCC 0.5787   PLCC 0.6288   worst 0.3931 on tid2013   (agiqa3k excluded)
+    within-ref                SRCC 0.6231   (354 references)
+
+  latency batch 1     139.2 ms p50, 245.3 ms p95
+  throughput          4.5 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          152,452,265
+
+per-image scores -> tres_heldout.csv
+### queue finished 05:38

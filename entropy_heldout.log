@@ -1,0 +1,30 @@
+entropy on 8010 images from the val split, native resolution (higher is better)
+  0/8010
+  500/8010
+  1000/8010
+  1500/8010
+  2000/8010
+  2500/8010
+  3000/8010
+  3500/8010
+  4000/8010
+  4500/8010
+  5000/8010
+  5500/8010
+  6000/8010
+  6500/8010
+  7000/8010
+  7500/8010
+  8000/8010
+
+    agiqa3k        n   2982   SRCC 0.3463   PLCC 0.4262
+    clive          n   1162   SRCC 0.2727   PLCC 0.2735
+    csiq           n    866   SRCC 0.2158   PLCC 0.3221
+    tid2013        n   3000   SRCC 0.0775   PLCC 0.1699
+    macro                     SRCC 0.1887   PLCC 0.2551   worst 0.0775 on tid2013   (agiqa3k excluded)
+    within-ref                SRCC 0.2811   (354 references)
+
+  latency batch 1     186.2 ms p50, 220.5 ms p95
+  throughput          7.8 img/s (the scoring loop, one image at a time, including image loading)
+
+per-image scores -> entropy_heldout.csv

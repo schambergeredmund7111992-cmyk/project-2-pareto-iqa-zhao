@@ -1,0 +1,39 @@
+niqe on 8010 images from the val split, longer side <= 224px (lower is better)
+  0/8010
+  500/8010
+  1000/8010
+  1500/8010
+  2000/8010
+  2500/8010
+  3000/8010
+  3500/8010
+  4000/8010
+  4500/8010
+  5000/8010
+  5500/8010
+/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/pyiqa/matlab_utils/functions.py:173: UserWarning: cov(): degrees of freedom is <= 0. Correction should be strictly less than the number of observations. (Triggered internally at /pytorch/aten/src/ATen/native/Correlation.cpp:116.)
+  return torch.cov(tensor, correction=correction)
+/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/pyiqa/archs/niqe_arch.py:161: UserWarning: torch.linalg.svd: During SVD computation with the selected cusolver driver, batches 0 failed to converge. A more accurate method will be used to compute the SVD as a fallback. Check doc at https://pytorch.org/docs/stable/generated/torch.linalg.svd.html (Triggered internally at /pytorch/aten/src/ATen/native/cuda/linalg/BatchLinearAlgebraLib.cpp:690.)
+  invcov_param = torch.linalg.pinv((cov_pris_param + cov_distparam) / 2)
+  6000/8010
+  6500/8010
+  7000/8010
+  7500/8010
+  8000/8010
+
+  3 images could not be scored and are excluded:
+    /home/sergey/iqa-data/agiqa3k/DALLE2_normal_253.jpg: linalg.svd: (Batch element 0): The algorithm failed to converge because the input matrix is ill-conditioned or has too many repeated singular values (error code: 36).
+    /home/sergey/iqa-data/agiqa3k/glide_normal_101.jpg: linalg.svd: (Batch element 0): The algorithm failed to converge because the input matrix is ill-conditioned or has too many repeated singular values (error code: 36).
+    /home/sergey/iqa-data/agiqa3k/glide_normal_263.jpg: linalg.svd: (Batch element 0): The algorithm failed to converge because the input matrix is ill-conditioned or has too many repeated singular values (error code: 36).
+
+    agiqa3k        n   2979   SRCC 0.2971   PLCC 0.3404
+    clive          n   1162   SRCC 0.2559   PLCC 0.2341
+    csiq           n    866   SRCC 0.3233   PLCC 0.4928
+    tid2013        n   3000   SRCC 0.1619   PLCC 0.2359
+    macro                     SRCC 0.2471   PLCC 0.3209   worst 0.1619 on tid2013   (agiqa3k excluded)
+    within-ref                SRCC 0.2561   (354 references)
+
+  latency batch 1     66.5 ms p50, 108.4 ms p95
+  throughput          15.9 img/s (the scoring loop, one image at a time, including image loading)
+
+per-image scores -> niqe_heldout_224.csv

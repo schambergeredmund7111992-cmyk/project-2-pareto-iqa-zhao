@@ -1,0 +1,36 @@
+dmm on 6240 images from the val split, native resolution (higher is better)
+  0/6240
+  500/6240
+  1000/6240
+  1500/6240
+  2000/6240
+  2500/6240
+  3000/6240
+  3500/6240
+  4000/6240
+  4500/6240
+  5000/6240
+  5500/6240
+  6000/6240
+
+  6240 images could not be scored and are excluded:
+    /home/sergey/iqa-data/kadid10k/images/I01_01_01.png: Please specify reference image for Full Reference metric
+    /home/sergey/iqa-data/kadid10k/images/I01_01_02.png: Please specify reference image for Full Reference metric
+    /home/sergey/iqa-data/kadid10k/images/I01_01_03.png: Please specify reference image for Full Reference metric
+    /home/sergey/iqa-data/kadid10k/images/I01_01_04.png: Please specify reference image for Full Reference metric
+    /home/sergey/iqa-data/kadid10k/images/I01_01_05.png: Please specify reference image for Full Reference metric
+    ... and 6235 more
+Traceback (most recent call last):
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/run_pyiqa.py", line 176, in <module>
+    main()
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/run_pyiqa.py", line 128, in main
+    sample = load(rows["path"].iloc[0])
+                  ~~~~~~~~~~~~~~~~~^^^
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/pandas/core/indexing.py", line 1207, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/pandas/core/indexing.py", line 1773, in _getitem_axis
+    self._validate_integer(key, axis)
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/pandas/core/indexing.py", line 1706, in _validate_integer
+    raise IndexError("single positional indexer is out-of-bounds")
+IndexError: single positional indexer is out-of-bounds

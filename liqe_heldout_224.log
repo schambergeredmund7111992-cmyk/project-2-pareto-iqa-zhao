@@ -1,0 +1,39 @@
+Loading pretrained model LIQE from /home/sergey/.cache/torch/hub/pyiqa/liqe_koniq.pt
+liqe on 8010 images from the val split, longer side <= 224px (higher is better)
+  0/8010
+  500/8010
+  1000/8010
+  1500/8010
+  2000/8010
+  2500/8010
+  3000/8010
+  3500/8010
+  4000/8010
+  4500/8010
+  5000/8010
+  5500/8010
+  6000/8010
+  6500/8010
+  7000/8010
+  7500/8010
+  8000/8010
+
+  3001 images could not be scored and are excluded:
+    /home/sergey/iqa-data/clive/LIVEC/Images/1024.JPG: Short side is less than 224, try upsampling the original image
+    /home/sergey/iqa-data/tid2013/tid2013/distorted_images/I01_01_1.bmp: Short side is less than 224, try upsampling the original image
+    /home/sergey/iqa-data/tid2013/tid2013/distorted_images/i01_01_2.bmp: Short side is less than 224, try upsampling the original image
+    /home/sergey/iqa-data/tid2013/tid2013/distorted_images/i01_01_3.bmp: Short side is less than 224, try upsampling the original image
+    /home/sergey/iqa-data/tid2013/tid2013/distorted_images/i01_01_4.bmp: Short side is less than 224, try upsampling the original image
+    ... and 2996 more
+
+    agiqa3k        n   2982   SRCC 0.6323   PLCC 0.6838
+    clive          n   1161   SRCC 0.7807   PLCC 0.7927
+    csiq           n    866   SRCC 0.6856   PLCC 0.7229
+    macro                     SRCC 0.7332   PLCC 0.7578   worst 0.6856 on csiq   (agiqa3k excluded)
+    within-ref                SRCC 0.6230   (329 references)
+
+  latency batch 1     3.5 ms p50, 4.0 ms p95
+  throughput          75.8 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          151,277,313
+
+per-image scores -> liqe_heldout_224.csv

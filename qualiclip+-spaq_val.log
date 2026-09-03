@@ -1,0 +1,30 @@
+Downloading: "https://hf-mirror.com/chaofengc/IQA-PyTorch-Weights/resolve/main/QualiCLIP%2B_spaq.pth" to /home/sergey/.cache/torch/hub/pyiqa/QualiCLIP%2B_spaq.pth
+
+  0%|          | 0.00/2.11M [00:00<?, ?B/s]  6%|▌         | 128k/2.11M [00:00<00:04, 447kB/s] 30%|██▉       | 640k/2.11M [00:00<00:00, 1.94MB/s] 89%|████████▉ | 1.88M/2.11M [00:00<00:00, 5.31MB/s]100%|██████████| 2.11M/2.11M [00:00<00:00, 4.16MB/s]
+Loading pretrained model QualiCLIP from /home/sergey/.cache/torch/hub/pyiqa/QualiCLIP%2B_spaq.pth
+qualiclip+-spaq on 6240 images from the val split, native resolution (higher is better)
+  0/6240
+  500/6240
+  1000/6240
+  1500/6240
+  2000/6240
+  2500/6240
+  3000/6240
+  3500/6240
+  4000/6240
+  4500/6240
+  5000/6240
+  5500/6240
+  6000/6240
+
+    kadid10k       n   2000   SRCC 0.5546   PLCC 0.5846
+    koniq10k       n   2015   SRCC 0.7969   PLCC 0.8117
+    spaq           n   2225   SRCC 0.7038   PLCC 0.6955
+    macro                     SRCC 0.6851   PLCC 0.6973   worst 0.5546 on kadid10k
+    within-ref                SRCC 0.6644   (16 references)
+
+  latency batch 1     80.8 ms p50, 139.0 ms p95
+  throughput          3.7 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          114,688
+
+per-image scores -> qualiclip+-spaq_val.csv

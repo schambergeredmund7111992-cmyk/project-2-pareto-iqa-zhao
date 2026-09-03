@@ -1,0 +1,25 @@
+clipiqa on 6240 images from the val split, longer side <= 224px (higher is better)
+  0/6240
+  500/6240
+  1000/6240
+  1500/6240
+  2000/6240
+  2500/6240
+  3000/6240
+  3500/6240
+  4000/6240
+  4500/6240
+  5000/6240
+  5500/6240
+  6000/6240
+
+    kadid10k       n   2000   SRCC 0.4417   PLCC 0.4728
+    koniq10k       n   2015   SRCC 0.3980   PLCC 0.4492
+    spaq           n   2225   SRCC 0.6176   PLCC 0.6126
+    macro                     SRCC 0.4858   PLCC 0.5115   worst 0.3980 on koniq10k
+    within-ref                SRCC 0.5851   (16 references)
+
+  latency batch 1     27.6 ms p50, 30.5 ms p95
+  throughput          13.6 img/s (the scoring loop, one image at a time, including image loading)
+
+per-image scores -> clipiqa_val_224.csv

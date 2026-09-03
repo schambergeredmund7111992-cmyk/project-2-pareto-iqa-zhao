@@ -1,0 +1,29 @@
+Downloading: "https://hf-mirror.com/chaofengc/IQA-PyTorch-Weights/resolve/main/regressor_tid2013.pth" to /home/sergey/.cache/torch/hub/pyiqa/regressor_tid2013.pth
+
+  0%|          | 0.00/19.2k [00:00<?, ?B/s]100%|██████████| 19.2k/19.2k [00:00<00:00, 215kB/s]
+arniqa-tid on 6240 images from the val split, native resolution (higher is better)
+  0/6240
+  500/6240
+  1000/6240
+  1500/6240
+  2000/6240
+  2500/6240
+  3000/6240
+  3500/6240
+  4000/6240
+  4500/6240
+  5000/6240
+  5500/6240
+  6000/6240
+
+    kadid10k       n   2000   SRCC 0.6939   PLCC 0.6865
+    koniq10k       n   2015   SRCC 0.3891   PLCC 0.4087
+    spaq           n   2225   SRCC 0.4822   PLCC 0.4771
+    macro                     SRCC 0.5218   PLCC 0.5241   worst 0.3891 on koniq10k
+    within-ref                SRCC 0.7839   (16 references)
+
+  latency batch 1     85.8 ms p50, 117.4 ms p95
+  throughput          3.5 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          23,512,129
+
+per-image scores -> arniqa-tid_val.csv

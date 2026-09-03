@@ -1,0 +1,28 @@
+Loading pretrained model SCNN from /home/sergey/.cache/torch/hub/pyiqa/DBCNN_scnn-7ea73d75.pth
+Loading pretrained model DBCNN from /home/sergey/.cache/torch/hub/pyiqa/DBCNN_KonIQ10k-2de81c0a.pth
+dbcnn on 6240 images from the val split, longer side <= 224px (higher is better)
+  0/6240
+  500/6240
+  1000/6240
+  1500/6240
+  2000/6240
+  2500/6240
+  3000/6240
+  3500/6240
+  4000/6240
+  4500/6240
+  5000/6240
+  5500/6240
+  6000/6240
+
+    kadid10k       n   2000   SRCC 0.6010   PLCC 0.6188
+    koniq10k       n   2015   SRCC 0.7808   PLCC 0.8368
+    spaq           n   2225   SRCC 0.8606   PLCC 0.8573
+    macro                     SRCC 0.7475   PLCC 0.7710   worst 0.6010 on kadid10k
+    within-ref                SRCC 0.7381   (16 references)
+
+  latency batch 1     1.5 ms p50, 1.6 ms p95
+  throughput          18.5 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          15,311,345
+
+per-image scores -> dbcnn_val_224.csv

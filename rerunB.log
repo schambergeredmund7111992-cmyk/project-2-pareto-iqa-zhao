@@ -1,0 +1,185 @@
+=== dbcnn on val ===
+Loading pretrained model SCNN from /home/sergey/.cache/torch/hub/pyiqa/DBCNN_scnn-7ea73d75.pth
+Loading pretrained model DBCNN from /home/sergey/.cache/torch/hub/pyiqa/DBCNN_KonIQ10k-2de81c0a.pth
+dbcnn on 6240 images from the val split, longer side <= 224px (higher is better)
+  0/6240
+  500/6240
+  1000/6240
+  1500/6240
+  2000/6240
+  2500/6240
+  3000/6240
+  3500/6240
+  4000/6240
+  4500/6240
+  5000/6240
+  5500/6240
+  6000/6240
+
+    kadid10k       n   2000   SRCC 0.6010   PLCC 0.6188
+    koniq10k       n   2015   SRCC 0.7808   PLCC 0.8368
+    spaq           n   2225   SRCC 0.8606   PLCC 0.8573
+    macro                     SRCC 0.7475   PLCC 0.7710   worst 0.6010 on kadid10k
+    within-ref                SRCC 0.7381   (16 references)
+
+  latency batch 1     1.5 ms p50, 1.6 ms p95
+  throughput          18.5 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          15,311,345
+
+per-image scores -> dbcnn_val_224.csv
+=== dbcnn on heldout ===
+Loading pretrained model SCNN from /home/sergey/.cache/torch/hub/pyiqa/DBCNN_scnn-7ea73d75.pth
+Loading pretrained model DBCNN from /home/sergey/.cache/torch/hub/pyiqa/DBCNN_KonIQ10k-2de81c0a.pth
+dbcnn on 8010 images from the val split, longer side <= 224px (higher is better)
+  0/8010
+  500/8010
+  1000/8010
+  1500/8010
+  2000/8010
+  2500/8010
+  3000/8010
+  3500/8010
+  4000/8010
+  4500/8010
+  5000/8010
+  5500/8010
+  6000/8010
+  6500/8010
+  7000/8010
+  7500/8010
+  8000/8010
+
+    agiqa3k        n   2982   SRCC 0.5668   PLCC 0.6358
+    clive          n   1162   SRCC 0.7643   PLCC 0.8005
+    csiq           n    866   SRCC 0.7165   PLCC 0.7489
+    tid2013        n   3000   SRCC 0.6554   PLCC 0.7088
+    macro                     SRCC 0.7121   PLCC 0.7527   worst 0.6554 on tid2013   (agiqa3k excluded)
+    within-ref                SRCC 0.6007   (354 references)
+
+  latency batch 1     1.4 ms p50, 1.4 ms p95
+  throughput          179.5 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          15,311,345
+
+per-image scores -> dbcnn_heldout_224.csv
+=== hyperiqa on val ===
+Loading pretrained model HyperNet from /home/sergey/.cache/torch/hub/pyiqa/HyperIQA-resnet50-koniq10k-c96c41b1.pth
+hyperiqa on 6240 images from the val split, longer side <= 224px (higher is better)
+  0/6240
+  500/6240
+  1000/6240
+  1500/6240
+  2000/6240
+  2500/6240
+  3000/6240
+  3500/6240
+  4000/6240
+  4500/6240
+  5000/6240
+  5500/6240
+  6000/6240
+
+    kadid10k       n   2000   SRCC 0.5481   PLCC 0.5716
+    koniq10k       n   2015   SRCC 0.6617   PLCC 0.7273
+    spaq           n   2225   SRCC 0.7506   PLCC 0.7497
+    macro                     SRCC 0.6534   PLCC 0.6829   worst 0.5481 on kadid10k
+    within-ref                SRCC 0.6861   (16 references)
+
+  latency batch 1     39.6 ms p50, 40.6 ms p95
+  throughput          12.1 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          27,375,369
+
+per-image scores -> hyperiqa_val_224.csv
+=== hyperiqa on heldout ===
+Loading pretrained model HyperNet from /home/sergey/.cache/torch/hub/pyiqa/HyperIQA-resnet50-koniq10k-c96c41b1.pth
+hyperiqa on 8010 images from the val split, longer side <= 224px (higher is better)
+  0/8010
+  500/8010
+  1000/8010
+  1500/8010
+  2000/8010
+  2500/8010
+  3000/8010
+  3500/8010
+  4000/8010
+  4500/8010
+  5000/8010
+  5500/8010
+  6000/8010
+  6500/8010
+  7000/8010
+  7500/8010
+  8000/8010
+
+    agiqa3k        n   2982   SRCC 0.5064   PLCC 0.5676
+    clive          n   1162   SRCC 0.7080   PLCC 0.7408
+    csiq           n    866   SRCC 0.7439   PLCC 0.7966
+    tid2013        n   3000   SRCC 0.5565   PLCC 0.6230
+    macro                     SRCC 0.6695   PLCC 0.7201   worst 0.5565 on tid2013   (agiqa3k excluded)
+    within-ref                SRCC 0.5487   (354 references)
+
+  latency batch 1     39.5 ms p50, 40.3 ms p95
+  throughput          23.3 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          27,375,369
+
+per-image scores -> hyperiqa_heldout_224.csv
+=== musiq on val ===
+Loading pretrained model MUSIQ from /home/sergey/.cache/torch/hub/pyiqa/musiq_koniq_ckpt-e95806b9.pth
+musiq on 6240 images from the val split, longer side <= 224px (higher is better)
+  0/6240
+  500/6240
+  1000/6240
+  1500/6240
+  2000/6240
+  2500/6240
+  3000/6240
+  3500/6240
+  4000/6240
+  4500/6240
+  5000/6240
+  5500/6240
+  6000/6240
+
+    kadid10k       n   2000   SRCC 0.4371   PLCC 0.4842
+    koniq10k       n   2015   SRCC 0.5837   PLCC 0.6485
+    spaq           n   2225   SRCC 0.7452   PLCC 0.7428
+    macro                     SRCC 0.5887   PLCC 0.6252   worst 0.4371 on kadid10k
+    within-ref                SRCC 0.5966   (16 references)
+
+  latency batch 1     88.8 ms p50, 105.1 ms p95
+  throughput          7.0 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          27,125,825
+
+per-image scores -> musiq_val_224.csv
+=== musiq on heldout ===
+Loading pretrained model MUSIQ from /home/sergey/.cache/torch/hub/pyiqa/musiq_koniq_ckpt-e95806b9.pth
+musiq on 8010 images from the val split, longer side <= 224px (higher is better)
+  0/8010
+  500/8010
+  1000/8010
+  1500/8010
+  2000/8010
+  2500/8010
+  3000/8010
+  3500/8010
+  4000/8010
+  4500/8010
+  5000/8010
+  5500/8010
+  6000/8010
+  6500/8010
+  7000/8010
+  7500/8010
+  8000/8010
+
+    agiqa3k        n   2982   SRCC 0.4959   PLCC 0.5682
+    clive          n   1162   SRCC 0.6573   PLCC 0.7098
+    csiq           n    866   SRCC 0.5458   PLCC 0.6443
+    tid2013        n   3000   SRCC 0.4904   PLCC 0.5906
+    macro                     SRCC 0.5645   PLCC 0.6482   worst 0.4904 on tid2013   (agiqa3k excluded)
+    within-ref                SRCC 0.5386   (354 references)
+
+  latency batch 1     80.2 ms p50, 114.7 ms p95
+  throughput          10.8 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          27,125,825
+
+per-image scores -> musiq_heldout_224.csv

@@ -1,0 +1,28 @@
+Downloading: "https://hf-mirror.com/chaofengc/IQA-PyTorch-Weights/resolve/main/ILNIQE_templateModel.mat" to /home/sergey/.cache/torch/hub/pyiqa/ILNIQE_templateModel.mat
+
+  0%|          | 0.00/2.64M [00:00<?, ?B/s]  5%|▍         | 128k/2.64M [00:00<00:07, 344kB/s] 19%|█▉        | 512k/2.64M [00:00<00:01, 1.30MB/s] 62%|██████▏   | 1.62M/2.64M [00:00<00:00, 4.19MB/s]100%|██████████| 2.64M/2.64M [00:00<00:00, 4.09MB/s]
+ilniqe on 6240 images from the val split, longer side <= 224px (lower is better)
+  0/6240
+  500/6240
+  1000/6240
+  1500/6240
+  2000/6240
+  2500/6240
+  3000/6240
+  3500/6240
+  4000/6240
+  4500/6240
+  5000/6240
+  5500/6240
+  6000/6240
+
+    kadid10k       n   2000   SRCC 0.3571   PLCC 0.4205
+    koniq10k       n   2015   SRCC 0.4704   PLCC 0.4588
+    spaq           n   2225   SRCC 0.6652   PLCC 0.6430
+    macro                     SRCC 0.4976   PLCC 0.5074   worst 0.3571 on kadid10k
+    within-ref                SRCC 0.4620   (16 references)
+
+  latency batch 1     1945.0 ms p50, 3118.2 ms p95
+  throughput          1.2 img/s (the scoring loop, one image at a time, including image loading)
+
+per-image scores -> ilniqe_val_224.csv

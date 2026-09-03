@@ -1,0 +1,271 @@
+every row at 224px on cuda, batch 16 for throughput
+
+Loading pretrained model UNIQUE from /home/sergey/.cache/torch/hub/pyiqa/UNIQUE.pt
+unique
+  FLOPs per image     7.4 G
+  latency batch 1     13.3 ms p50, 15.9 ms p95
+  throughput          1599.0 img/s
+  peak memory         205 MB
+  parameters          22,321,962
+
+Loading pretrained model LIQE from /home/sergey/.cache/torch/hub/pyiqa/liqe_mix.pt
+liqe_mix
+  FLOPs per image     8.8 G
+  latency batch 1     21.5 ms p50, 28.9 ms p95
+  throughput          368.9 img/s
+  peak memory         647 MB
+  parameters          151,277,313
+
+Loading pretrained model from /home/sergey/.cache/torch/hub/pyiqa/Metaiqa_livec.pth for inference...
+metaiqa
+  FLOPs per image     3.6 G
+  latency batch 1     7.8 ms p50, 9.2 ms p95
+  throughput          1188.9 img/s
+  peak memory         179 MB
+  parameters          13,242,923
+
+maclip
+  FLOPs per image     84.0 G
+  latency batch 1     14.5 ms p50, 18.2 ms p95
+  throughput          252.3 img/s
+  peak memory         463 MB
+  parameters          102,007,137
+
+Loading pretrained model URanker from /home/sergey/.cache/torch/hub/pyiqa/URanker_ckpt-450eb36d.pth
+uranker
+  FLOPs per image     25.2 G
+  latency batch 1     27.6 ms p50, 34.6 ms p95
+  throughput          145.3 img/s
+  peak memory         468 MB
+  parameters          21,588,823
+
+Loading pretrained model CFANet from /home/sergey/.cache/torch/hub/pyiqa/cfanet_iaa_ava_swin-393b41b4.pth
+topiq_iaa
+  FLOPs per image     105.0 G
+  latency batch 1     40.6 ms p50, 50.1 ms p95
+  throughput          50.1 img/s
+  peak memory         1849 MB
+  parameters          123,456,110
+
+Loading pretrained model CFANet from /home/sergey/.cache/torch/hub/pyiqa/cfanet_iaa_ava_res50-3cd62bb3.pth
+topiq_iaa_res50
+  FLOPs per image     48.9 G
+  latency batch 1     29.0 ms p50, 38.8 ms p95
+  throughput          113.2 img/s
+  peak memory         1362 MB
+  parameters          73,383,567
+
+arniqa-kadid
+  FLOPs per image     10.3 G
+  latency batch 1     22.5 ms p50, 29.9 ms p95
+  throughput          508.8 img/s
+  peak memory         283 MB
+  parameters          23,512,129
+
+arniqa-spaq
+  FLOPs per image     10.3 G
+  latency batch 1     22.2 ms p50, 28.7 ms p95
+  throughput          472.1 img/s
+  peak memory         283 MB
+  parameters          23,512,129
+
+arniqa-clive
+  FLOPs per image     10.3 G
+  latency batch 1     23.9 ms p50, 41.1 ms p95
+  throughput          467.4 img/s
+  peak memory         283 MB
+  parameters          23,512,129
+
+arniqa-csiq
+  FLOPs per image     10.3 G
+  latency batch 1     10.2 ms p50, 30.5 ms p95
+  throughput          1808.5 img/s
+  peak memory         283 MB
+  parameters          23,512,129
+
+arniqa-tid
+  FLOPs per image     10.3 G
+  latency batch 1     10.8 ms p50, 24.9 ms p95
+  throughput          1384.3 img/s
+  peak memory         283 MB
+  parameters          23,512,129
+
+arniqa-live
+  FLOPs per image     10.3 G
+  latency batch 1     8.4 ms p50, 11.5 ms p95
+  throughput          1658.2 img/s
+  peak memory         283 MB
+  parameters          23,512,129
+
+arniqa-flive
+  FLOPs per image     10.3 G
+  latency batch 1     11.9 ms p50, 12.7 ms p95
+  throughput          1499.9 img/s
+  peak memory         283 MB
+  parameters          23,512,129
+
+Loading pretrained model CLIPIQA from /home/sergey/.cache/torch/hub/pyiqa/CLIPIQA%2B_RN50_512-89f5d940.pth
+clipiqa+_rn50_512
+  FLOPs per image     24.1 G
+  latency batch 1     9.0 ms p50, 11.4 ms p95
+  throughput          1260.4 img/s
+  peak memory         596 MB
+  parameters          16,384
+
+Loading pretrained model CNNIQA from /home/sergey/.cache/torch/hub/pyiqa/CNNIQA_koniq10k-e6f14c91.pth
+cnniqa
+  FLOPs per image     0.7 G
+  latency batch 1     7.5 ms p50, 9.3 ms p95
+  throughput          973.6 img/s
+  peak memory         313 MB
+  parameters          729,801
+
+Loading pretrained model MANIQA from /home/sergey/.cache/torch/hub/pyiqa/ckpt_kadid10k.pt
+maniqa-kadid
+  FLOPs per image     6055.4 G
+  latency batch 1     394.1 ms p50, 616.3 ms p95
+  throughput          2.9 img/s  (one at a time: this metric refused a batch)
+  peak memory         23826 MB
+  parameters          135,747,530
+
+Loading pretrained model MANIQA from /home/sergey/.cache/torch/hub/pyiqa/MANIQA_PIPAL-ae6d356b.pth
+maniqa-pipal
+  FLOPs per image     6055.4 G
+  latency batch 1     320.4 ms p50, 407.9 ms p95
+  throughput          3.0 img/s  (one at a time: this metric refused a batch)
+  peak memory         23826 MB
+  parameters          135,747,530
+
+Loading pretrained model MUSIQ from /home/sergey/.cache/torch/hub/pyiqa/musiq_paq2piq_ckpt-364c0c84.pth
+musiq-paq2piq
+  FLOPs per image     17.8 G
+  latency batch 1     33.7 ms p50, 54.3 ms p95
+  throughput          243.4 img/s
+  peak memory         1024 MB
+  parameters          27,125,825
+
+Loading pretrained model NIMA from /home/sergey/.cache/torch/hub/pyiqa/NIMA_koniq-250367ae.pth
+nima-koniq
+  FLOPs per image     26.3 G
+  latency batch 1     26.4 ms p50, 34.8 ms p95
+  throughput          747.8 img/s
+  peak memory         517 MB
+  parameters          54,308,001
+
+Loading pretrained model NIMA from /home/sergey/.cache/torch/hub/pyiqa/NIMA-spaq-46a7fcb7.pth
+nima-spaq
+  FLOPs per image     26.3 G
+  latency batch 1     16.8 ms p50, 22.2 ms p95
+  throughput          878.7 img/s
+  peak memory         517 MB
+  parameters          54,308,001
+
+Loading pretrained model NIMA from /home/sergey/.cache/torch/hub/pyiqa/NIMA_VGG16_ava-dc4e8265.pth
+nima-vgg16-ava
+  FLOPs per image     30.7 G
+  latency batch 1     1.3 ms p50, 1.7 ms p95
+  throughput          1162.9 img/s
+  peak memory         672 MB
+  parameters          14,719,818
+
+piqe
+  FLOPs per image     0.0 G
+  latency batch 1     1.9 ms p50, 3.0 ms p95
+  throughput          6577.6 img/s
+  peak memory         49 MB
+
+Loading pretrained model CFANet from /home/sergey/.cache/torch/hub/pyiqa/cfanet_nr_flive_res50-ded1c74e.pth
+topiq_nr-flive
+  FLOPs per image     41.6 G
+  latency batch 1     15.8 ms p50, 21.8 ms p95
+  throughput          310.8 img/s
+  peak memory         1241 MB
+  parameters          45,196,934
+
+Loading pretrained model TReS from /home/sergey/.cache/torch/hub/pyiqa/tres_flive-09b0de5b.pth
+tres-flive
+  FLOPs per image     1995.2 G
+  latency batch 1     136.0 ms p50, 149.6 ms p95
+  throughput          7.5 img/s
+  peak memory         24816 MB
+  parameters          152,452,265
+
+-> cost_batch3.csv
+-pareto-iqa/benchmark_pyiqa.py", line 49, in forward
+    return metric(x)
+           ^^^^^^^^^
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/pyiqa/models/inference_model.py", line 121, in forward
+    output = self.net(target.to(device), **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/pyiqa/archs/tres_arch.py", line 448, in forward
+    out, layer1, layer2, layer3, layer4 = self.forward_backbone(self.model, x)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/pyiqa/archs/tres_arch.py", line 406, in forward_backbone
+    x = model.bn1(x)
+        ^^^^^^^^^^^^
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/torch/nn/modules/batchnorm.py", line 193, in forward
+    return F.batch_norm(
+           ^^^^^^^^^^^^^
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/torch/nn/functional.py", line 2822, in batch_norm
+    return torch.batch_norm(
+           ^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.39 GiB. GPU 0 has a total capacity of 44.31 GiB of which 1.19 GiB is free. Process 1396066 has 4.35 GiB memory in use. Including non-PyTorch memory, this process has 4.53 GiB memory in use. Process 2080222 has 2.03 GiB memory in use. Process 2083760 has 32.19 GiB memory in use. Of the allocated memory 3.99 GiB is allocated by PyTorch, and 31.87 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/benchmark_pyiqa.py", line 146, in <module>
+    main()
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/benchmark_pyiqa.py", line 120, in main
+    bench_one(metric, device, args.image_size, args.batch_size, 5)
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/benchmark_pyiqa.py", line 85, in bench_one
+    forward(one)
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/benchmark_pyiqa.py", line 49, in forward
+    return metric(x)
+           ^^^^^^^^^
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/pyiqa/models/inference_model.py", line 121, in forward
+    output = self.net(target.to(device), **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/pyiqa/archs/tres_arch.py", line 474, in forward
+    flayer1_t = self.avg8(self.L2pooling_l1(F.normalize(flayer1, dim=1, p=2)))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/pyiqa/archs/tres_arch.py", line 300, in forward
+    return (out + 1e-12).sqrt()
+           ^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 154.00 MiB. GPU 0 has a total capacity of 44.31 GiB of which 76.38 MiB is free. Process 1396066 has 4.35 GiB memory in use. Including non-PyTorch memory, this process has 5.64 GiB memory in use. Process 2080222 has 2.03 GiB memory in use. Process 2083760 has 32.19 GiB memory in use. Of the allocated memory 4.76 GiB is allocated by PyTorch, and 385.57 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

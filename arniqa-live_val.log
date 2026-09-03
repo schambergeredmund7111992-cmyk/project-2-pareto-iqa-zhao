@@ -1,0 +1,29 @@
+Downloading: "https://hf-mirror.com/chaofengc/IQA-PyTorch-Weights/resolve/main/regressor_live.pth" to /home/sergey/.cache/torch/hub/pyiqa/regressor_live.pth
+
+  0%|          | 0.00/19.2k [00:00<?, ?B/s]100%|██████████| 19.2k/19.2k [00:00<00:00, 196kB/s]100%|██████████| 19.2k/19.2k [00:00<00:00, 195kB/s]
+arniqa-live on 6240 images from the val split, native resolution (higher is better)
+  0/6240
+  500/6240
+  1000/6240
+  1500/6240
+  2000/6240
+  2500/6240
+  3000/6240
+  3500/6240
+  4000/6240
+  4500/6240
+  5000/6240
+  5500/6240
+  6000/6240
+
+    kadid10k       n   2000   SRCC 0.7886   PLCC 0.7897
+    koniq10k       n   2015   SRCC 0.6973   PLCC 0.7097
+    spaq           n   2225   SRCC 0.5070   PLCC 0.4875
+    macro                     SRCC 0.6643   PLCC 0.6623   worst 0.5070 on spaq
+    within-ref                SRCC 0.8104   (16 references)
+
+  latency batch 1     174.3 ms p50, 231.9 ms p95
+  throughput          3.4 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          23,512,129
+
+per-image scores -> arniqa-live_val.csv

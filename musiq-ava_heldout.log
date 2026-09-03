@@ -1,0 +1,32 @@
+Loading pretrained model MUSIQ from /home/sergey/.cache/torch/hub/pyiqa/musiq_ava_ckpt-e8d3f067.pth
+musiq-ava on 8010 images from the val split, native resolution (higher is better)
+  0/8010
+  500/8010
+  1000/8010
+  1500/8010
+  2000/8010
+  2500/8010
+  3000/8010
+  3500/8010
+  4000/8010
+  4500/8010
+  5000/8010
+  5500/8010
+  6000/8010
+  6500/8010
+  7000/8010
+  7500/8010
+  8000/8010
+
+    agiqa3k        n   2982   SRCC 0.7064   PLCC 0.7657
+    clive          n   1162   SRCC 0.5944   PLCC 0.5989
+    csiq           n    866   SRCC 0.5831   PLCC 0.6510
+    tid2013        n   3000   SRCC 0.4264   PLCC 0.5307
+    macro                     SRCC 0.5347   PLCC 0.5935   worst 0.4264 on tid2013   (agiqa3k excluded)
+    within-ref                SRCC 0.6765   (354 references)
+
+  latency batch 1     13.7 ms p50, 80.6 ms p95
+  throughput          16.8 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          27,129,290
+
+per-image scores -> musiq-ava_heldout.csv

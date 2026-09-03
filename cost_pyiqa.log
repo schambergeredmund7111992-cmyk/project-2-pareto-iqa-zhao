@@ -1,0 +1,46 @@
+every row at 224px on cuda, batch 16 for throughput
+
+brisque
+  FLOPs per image     0.0 G
+  latency batch 1     12.4 ms p50, 17.1 ms p95
+  throughput          1260.7 img/s
+  peak memory         87 MB
+
+niqe
+  FLOPs per image     0.0 G
+  latency batch 1     21.6 ms p50, 27.8 ms p95
+  throughput          109.1 img/s
+  peak memory         80 MB
+
+clipiqa
+  FLOPs per image     71.8 G
+  latency batch 1     8.9 ms p50, 9.4 ms p95
+  throughput          1321.4 img/s
+  peak memory         595 MB
+
+Loading pretrained model SCNN from /home/sergey/.cache/torch/hub/pyiqa/DBCNN_scnn-7ea73d75.pth
+Loading pretrained model DBCNN from /home/sergey/.cache/torch/hub/pyiqa/DBCNN_KonIQ10k-2de81c0a.pth
+dbcnn
+  FLOPs per image     33.0 G
+  latency batch 1     1.4 ms p50, 1.6 ms p95
+  throughput          999.6 img/s
+  peak memory         674 MB
+  parameters          15,311,345
+
+Loading pretrained model HyperNet from /home/sergey/.cache/torch/hub/pyiqa/HyperIQA-resnet50-koniq10k-c96c41b1.pth
+hyperiqa
+  FLOPs per image     214.5 G
+  latency batch 1     11.2 ms p50, 11.3 ms p95
+  throughput          69.0 img/s
+  peak memory         5795 MB
+  parameters          27,375,369
+
+Loading pretrained model MUSIQ from /home/sergey/.cache/torch/hub/pyiqa/musiq_koniq_ckpt-e95806b9.pth
+musiq
+  FLOPs per image     17.8 G
+  latency batch 1     9.0 ms p50, 26.4 ms p95
+  throughput          400.1 img/s
+  peak memory         1025 MB
+  parameters          27,125,825
+
+-> cost_pyiqa.csv

@@ -1,0 +1,39 @@
+afine_nr on 8010 images from the val split, native resolution (lower is better)
+  0/8010
+  500/8010
+  1000/8010
+  1500/8010
+  2000/8010
+  2500/8010
+  3000/8010
+  3500/8010
+  4000/8010
+  4500/8010
+  5000/8010
+  5500/8010
+  6000/8010
+  6500/8010
+  7000/8010
+  7500/8010
+  8000/8010
+
+  1160 images could not be scored and are excluded:
+    /home/sergey/iqa-data/clive/LIVEC/Images/100.bmp: The height and width of the input image must be divisible by 32.
+    /home/sergey/iqa-data/clive/LIVEC/Images/101.bmp: The height and width of the input image must be divisible by 32.
+    /home/sergey/iqa-data/clive/LIVEC/Images/102.bmp: The height and width of the input image must be divisible by 32.
+    /home/sergey/iqa-data/clive/LIVEC/Images/103.bmp: The height and width of the input image must be divisible by 32.
+    /home/sergey/iqa-data/clive/LIVEC/Images/104.bmp: The height and width of the input image must be divisible by 32.
+    ... and 1155 more
+
+    agiqa3k        n   2982   SRCC 0.5457   PLCC 0.5601
+    clive          n      2   SRCC 1.0000   PLCC 1.0000
+    csiq           n    866   SRCC 0.7198   PLCC 0.7532
+    tid2013        n   3000   SRCC 0.7421   PLCC 0.7614
+    macro                     SRCC 0.8206   PLCC 0.8382   worst 0.7198 on csiq   (agiqa3k excluded)
+    within-ref                SRCC 0.6278   (354 references)
+
+  latency batch 1     169.0 ms p50, 229.9 ms p95
+  throughput          3.8 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          152,678,285
+
+per-image scores -> afine_nr_heldout.csv

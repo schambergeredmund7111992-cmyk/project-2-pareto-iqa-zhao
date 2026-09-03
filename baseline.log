@@ -1,0 +1,64 @@
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 27225.97it/s]
+[transformers] [1mCLIPVisionModel LOAD REPORT[0m from: openai/clip-vit-base-patch16
+Key                                                          | Status     |  | 
+-------------------------------------------------------------+------------+--+-
+text_model.encoder.layers.{0...11}.layer_norm1.weight        | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.k_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm2.weight        | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.out_proj.bias   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.out_proj.weight | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc1.bias              | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.v_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc2.weight            | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.v_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.k_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.q_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm1.bias          | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc1.weight            | UNEXPECTED |  | 
+text_model.final_layer_norm.bias                             | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm2.bias          | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.q_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc2.bias              | UNEXPECTED |  | 
+text_model.embeddings.position_embedding.weight              | UNEXPECTED |  | 
+text_model.final_layer_norm.weight                           | UNEXPECTED |  | 
+logit_scale                                                  | UNEXPECTED |  | 
+text_model.embeddings.token_embedding.weight                 | UNEXPECTED |  | 
+text_projection.weight                                       | UNEXPECTED |  | 
+visual_projection.weight                                     | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+clip-base at 224px on cuda, 768-d features
+train 25083  held out 6240  (split by reference, sampling by_dataset)
+198,657 trainable parameters — the backbone is frozen
+epoch 0: loss 0.0727
+    kadid10k       n   2000   SRCC 0.7198   PLCC 0.7233
+    koniq10k       n   2015   SRCC 0.7538   PLCC 0.7794
+    spaq           n   2225   SRCC 0.8579   PLCC 0.8620
+    macro                     SRCC 0.7771   PLCC 0.7882   worst 0.7198 on kadid10k
+    within-ref                SRCC 0.8710   (16 references)
+epoch 1: loss 0.0557
+    kadid10k       n   2000   SRCC 0.7642   PLCC 0.7725
+    koniq10k       n   2015   SRCC 0.7789   PLCC 0.8071
+    spaq           n   2225   SRCC 0.8753   PLCC 0.8798
+    macro                     SRCC 0.8061   PLCC 0.8198   worst 0.7642 on kadid10k
+    within-ref                SRCC 0.8802   (16 references)
+epoch 2: loss 0.0502
+    kadid10k       n   2000   SRCC 0.7529   PLCC 0.7584
+    koniq10k       n   2015   SRCC 0.7604   PLCC 0.7996
+    spaq           n   2225   SRCC 0.8816   PLCC 0.8879
+    macro                     SRCC 0.7983   PLCC 0.8153   worst 0.7529 on kadid10k
+    within-ref                SRCC 0.8846   (16 references)
+epoch 3: loss 0.0447
+    kadid10k       n   2000   SRCC 0.7285   PLCC 0.7367
+    koniq10k       n   2015   SRCC 0.7844   PLCC 0.8220
+    spaq           n   2225   SRCC 0.8843   PLCC 0.8871
+    macro                     SRCC 0.7990   PLCC 0.8152   worst 0.7285 on kadid10k
+    within-ref                SRCC 0.8881   (16 references)
+epoch 4: loss 0.0412
+    kadid10k       n   2000   SRCC 0.7148   PLCC 0.7216
+    koniq10k       n   2015   SRCC 0.7810   PLCC 0.8166
+    spaq           n   2225   SRCC 0.8858   PLCC 0.8917
+    macro                     SRCC 0.7938   PLCC 0.8100   worst 0.7148 on kadid10k
+    within-ref                SRCC 0.8942   (16 references)
+saved -> ./baseline.pt

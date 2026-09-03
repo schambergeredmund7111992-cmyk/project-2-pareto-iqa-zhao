@@ -1,0 +1,32 @@
+Loading pretrained model MUSIQ from /home/sergey/.cache/torch/hub/pyiqa/musiq_ava_ckpt-e8d3f067.pth
+musiq-ava on 6240 images from the val split, native resolution (higher is better)
+  0/6240
+  500/6240
+  1000/6240
+  1500/6240
+  2000/6240
+  2500/6240
+  3000/6240
+  3500/6240
+  4000/6240
+  4500/6240
+  5000/6240
+  5500/6240
+  6000/6240
+
+  3 images could not be scored and are excluded:
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00561.jpg: CUDA out of memory. Tried to allocate 11.20 GiB. GPU 0 has a total capacity of 44.31 GiB of which 10.56 GiB is free. Process 639669 has 1.12 GiB memory in use. Process 639674 has 1.21 GiB memory in use. Process 1889590 has 5.13 GiB memory in use. Including non-PyTorch memory, this process has 24.65 GiB memory in use. Process 2188608 has 1.60 GiB memory in use. Of the allocated memory 12.94 GiB is allocated by PyTorch, and 11.21 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00579.jpg: CUDA out of memory. Tried to allocate 11.20 GiB. GPU 0 has a total capacity of 44.31 GiB of which 9.48 GiB is free. Process 639669 has 1.12 GiB memory in use. Process 639674 has 1.21 GiB memory in use. Process 1889590 has 5.13 GiB memory in use. Including non-PyTorch memory, this process has 24.65 GiB memory in use. Process 2188608 has 2.69 GiB memory in use. Of the allocated memory 12.94 GiB is allocated by PyTorch, and 11.21 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/03970.jpg: CUDA out of memory. Tried to allocate 12.55 GiB. GPU 0 has a total capacity of 44.31 GiB of which 9.47 GiB is free. Process 639669 has 1.12 GiB memory in use. Process 639674 has 1.21 GiB memory in use. Process 1889590 has 5.13 GiB memory in use. Including non-PyTorch memory, this process has 27.35 GiB memory in use. Of the allocated memory 14.45 GiB is allocated by PyTorch, and 12.41 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+    kadid10k       n   2000   SRCC 0.4820   PLCC 0.5211
+    koniq10k       n   2015   SRCC 0.6063   PLCC 0.6154
+    spaq           n   2222   SRCC -0.1849   PLCC -0.1750
+    macro                     SRCC 0.3011   PLCC 0.3205   worst -0.1849 on spaq
+    within-ref                SRCC 0.5499   (16 references)
+
+  latency batch 1     42.7 ms p50, 73.9 ms p95
+  throughput          1.9 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          27,129,290
+
+per-image scores -> musiq-ava_val.csv

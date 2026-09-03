@@ -1,0 +1,35 @@
+Downloading: "https://hf-mirror.com/chaofengc/IQA-PyTorch-Weights/resolve/main/regressor_kadid10k.pth" to /home/sergey/.cache/torch/hub/pyiqa/regressor_kadid10k.pth
+
+  0%|          | 0.00/19.3k [00:00<?, ?B/s]100%|██████████| 19.3k/19.3k [00:00<00:00, 295kB/s]
+arniqa-kadid on 6240 images from the val split, native resolution (higher is better)
+  0/6240
+  500/6240
+  1000/6240
+  1500/6240
+  2000/6240
+  2500/6240
+  3000/6240
+  3500/6240
+  4000/6240
+  4500/6240
+  5000/6240
+  5500/6240
+  6000/6240
+
+  4 images could not be scored and are excluded:
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00106.jpg: CUDA out of memory. Tried to allocate 1.17 GiB. GPU 0 has a total capacity of 44.31 GiB of which 1.13 GiB is free. Process 2813807 has 934.00 MiB memory in use. Including non-PyTorch memory, this process has 4.45 GiB memory in use. Process 2838531 has 2.25 GiB memory in use. Process 2840224 has 1.07 GiB memory in use. Process 2838743 has 788.00 MiB memory in use. Process 2876965 has 4.41 GiB memory in use. Process 2890916 has 11.49 GiB memory in use. Process 2890913 has 4.67 GiB memory in use. Process 2890918 has 11.49 GiB memory in use. Process 2989730 has 1.42 GiB memory in use. Of the allocated memory 3.23 GiB is allocated by PyTorch, and 741.70 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00561.jpg: CUDA out of memory. Tried to allocate 1.35 GiB. GPU 0 has a total capacity of 44.31 GiB of which 800.50 MiB is free. Process 2813807 has 934.00 MiB memory in use. Including non-PyTorch memory, this process has 4.79 GiB memory in use. Process 2838531 has 2.25 GiB memory in use. Process 2840224 has 1.07 GiB memory in use. Process 2838743 has 788.00 MiB memory in use. Process 2876965 has 4.41 GiB memory in use. Process 2890916 has 11.49 GiB memory in use. Process 2890913 has 4.67 GiB memory in use. Process 2890918 has 11.49 GiB memory in use. Process 2989730 has 1.42 GiB memory in use. Of the allocated memory 3.69 GiB is allocated by PyTorch, and 622.53 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00579.jpg: CUDA out of memory. Tried to allocate 1.35 GiB. GPU 0 has a total capacity of 44.31 GiB of which 800.50 MiB is free. Process 2813807 has 934.00 MiB memory in use. Including non-PyTorch memory, this process has 4.79 GiB memory in use. Process 2838531 has 2.25 GiB memory in use. Process 2840224 has 1.07 GiB memory in use. Process 2838743 has 788.00 MiB memory in use. Process 2876965 has 4.41 GiB memory in use. Process 2890916 has 11.49 GiB memory in use. Process 2890913 has 4.67 GiB memory in use. Process 2890918 has 11.49 GiB memory in use. Process 2989730 has 1.42 GiB memory in use. Of the allocated memory 3.69 GiB is allocated by PyTorch, and 622.53 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00743.jpg: CUDA out of memory. Tried to allocate 1.35 GiB. GPU 0 has a total capacity of 44.31 GiB of which 622.50 MiB is free. Process 2813807 has 934.00 MiB memory in use. Including non-PyTorch memory, this process has 4.97 GiB memory in use. Process 2838531 has 2.25 GiB memory in use. Process 2840224 has 1.07 GiB memory in use. Process 2838743 has 788.00 MiB memory in use. Process 2876965 has 4.41 GiB memory in use. Process 2890916 has 11.49 GiB memory in use. Process 2890913 has 4.67 GiB memory in use. Process 2890918 has 11.49 GiB memory in use. Process 2989730 has 1.42 GiB memory in use. Of the allocated memory 3.69 GiB is allocated by PyTorch, and 800.53 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+    kadid10k       n   2000   SRCC 0.9271   PLCC 0.9295
+    koniq10k       n   2015   SRCC 0.5317   PLCC 0.5377
+    spaq           n   2221   SRCC 0.2924   PLCC 0.3031
+    macro                     SRCC 0.5837   PLCC 0.5901   worst 0.2924 on spaq
+    within-ref                SRCC 0.9327   (16 references)
+
+  latency batch 1     448.5 ms p50, 684.6 ms p95
+  throughput          0.8 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          23,512,129
+
+per-image scores -> arniqa-kadid_val.csv

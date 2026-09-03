@@ -1,0 +1,14 @@
+cache_index,dataset,reference,path,scaled_subjective_score,prediction
+20456,spaq,spaq/00259,/home/sergey/iqa-data/spaq/SPAQ/TestImage/00259.jpg,0.5354255319148936,1.5790587663650513
+20476,spaq,spaq/00279,/home/sergey/iqa-data/spaq/SPAQ/TestImage/00279.jpg,0.8838297872340425,4.99504280090332
+21139,spaq,spaq/00942,/home/sergey/iqa-data/spaq/SPAQ/TestImage/00942.jpg,0.8040425531914893,4.853404998779297
+21552,spaq,spaq/01355,/home/sergey/iqa-data/spaq/SPAQ/TestImage/01355.jpg,0.6324468085106383,3.2558865547180176
+21674,spaq,spaq/01477,/home/sergey/iqa-data/spaq/SPAQ/TestImage/01477.jpg,0.6138297872340426,4.363001823425293
+22202,spaq,spaq/02005,/home/sergey/iqa-data/spaq/SPAQ/TestImage/02005.jpg,0.7380851063829786,3.783656597137451
+22999,spaq,spaq/02802,/home/sergey/iqa-data/spaq/SPAQ/TestImage/02802.jpg,0.4543617021276596,2.629072666168213
+23050,spaq,spaq/02853,/home/sergey/iqa-data/spaq/SPAQ/TestImage/02853.jpg,0.6795744680851064,4.937629222869873
+24875,spaq,spaq/04678,/home/sergey/iqa-data/spaq/SPAQ/TestImage/04678.jpg,0.7340425531914894,4.9132585525512695
+24987,spaq,spaq/04790,/home/sergey/iqa-data/spaq/SPAQ/TestImage/04790.jpg,0.801063829787234,2.9387423992156982
+25378,spaq,spaq/05181,/home/sergey/iqa-data/spaq/SPAQ/TestImage/05181.jpg,0.8847872340425532,4.608011722564697
+26948,spaq,spaq/06751,/home/sergey/iqa-data/spaq/SPAQ/TestImage/06751.jpg,0.723404255319149,3.875854969024658
+28838,spaq,spaq/08641,/home/sergey/iqa-data/spaq/SPAQ/TestImage/08641.jpg,0.8723404255319149,3.8961148262023926

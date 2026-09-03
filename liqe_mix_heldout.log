@@ -1,0 +1,32 @@
+Loading pretrained model LIQE from /home/sergey/.cache/torch/hub/pyiqa/liqe_mix.pt
+liqe_mix on 8010 images from the val split, native resolution (higher is better)
+  0/8010
+  500/8010
+  1000/8010
+  1500/8010
+  2000/8010
+  2500/8010
+  3000/8010
+  3500/8010
+  4000/8010
+  4500/8010
+  5000/8010
+  5500/8010
+  6000/8010
+  6500/8010
+  7000/8010
+  7500/8010
+  8000/8010
+
+    agiqa3k        n   2982   SRCC 0.7219   PLCC 0.7619
+    clive          n   1162   SRCC 0.9386   PLCC 0.9255
+    csiq           n    866   SRCC 0.9630   PLCC 0.9453
+    tid2013        n   3000   SRCC 0.7982   PLCC 0.8055
+    macro                     SRCC 0.8999   PLCC 0.8921   worst 0.7982 on tid2013   (agiqa3k excluded)
+    within-ref                SRCC 0.7284   (354 references)
+
+  latency batch 1     50.8 ms p50, 110.3 ms p95
+  throughput          8.6 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          151,277,313
+
+per-image scores -> liqe_mix_heldout.csv

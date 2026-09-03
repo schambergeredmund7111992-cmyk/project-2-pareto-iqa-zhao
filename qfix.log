@@ -1,0 +1,333 @@
+=== arniqa-kadid on val === 08:23
+Downloading: "https://hf-mirror.com/chaofengc/IQA-PyTorch-Weights/resolve/main/regressor_kadid10k.pth" to /home/sergey/.cache/torch/hub/pyiqa/regressor_kadid10k.pth
+
+  0%|          | 0.00/19.3k [00:00<?, ?B/s]100%|██████████| 19.3k/19.3k [00:00<00:00, 295kB/s]
+arniqa-kadid on 6240 images from the val split, native resolution (higher is better)
+  0/6240
+  500/6240
+  1000/6240
+  1500/6240
+  2000/6240
+  2500/6240
+  3000/6240
+  3500/6240
+  4000/6240
+  4500/6240
+  5000/6240
+  5500/6240
+  6000/6240
+
+  4 images could not be scored and are excluded:
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00106.jpg: CUDA out of memory. Tried to allocate 1.17 GiB. GPU 0 has a total capacity of 44.31 GiB of which 1.13 GiB is free. Process 2813807 has 934.00 MiB memory in use. Including non-PyTorch memory, this process has 4.45 GiB memory in use. Process 2838531 has 2.25 GiB memory in use. Process 2840224 has 1.07 GiB memory in use. Process 2838743 has 788.00 MiB memory in use. Process 2876965 has 4.41 GiB memory in use. Process 2890916 has 11.49 GiB memory in use. Process 2890913 has 4.67 GiB memory in use. Process 2890918 has 11.49 GiB memory in use. Process 2989730 has 1.42 GiB memory in use. Of the allocated memory 3.23 GiB is allocated by PyTorch, and 741.70 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00561.jpg: CUDA out of memory. Tried to allocate 1.35 GiB. GPU 0 has a total capacity of 44.31 GiB of which 800.50 MiB is free. Process 2813807 has 934.00 MiB memory in use. Including non-PyTorch memory, this process has 4.79 GiB memory in use. Process 2838531 has 2.25 GiB memory in use. Process 2840224 has 1.07 GiB memory in use. Process 2838743 has 788.00 MiB memory in use. Process 2876965 has 4.41 GiB memory in use. Process 2890916 has 11.49 GiB memory in use. Process 2890913 has 4.67 GiB memory in use. Process 2890918 has 11.49 GiB memory in use. Process 2989730 has 1.42 GiB memory in use. Of the allocated memory 3.69 GiB is allocated by PyTorch, and 622.53 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00579.jpg: CUDA out of memory. Tried to allocate 1.35 GiB. GPU 0 has a total capacity of 44.31 GiB of which 800.50 MiB is free. Process 2813807 has 934.00 MiB memory in use. Including non-PyTorch memory, this process has 4.79 GiB memory in use. Process 2838531 has 2.25 GiB memory in use. Process 2840224 has 1.07 GiB memory in use. Process 2838743 has 788.00 MiB memory in use. Process 2876965 has 4.41 GiB memory in use. Process 2890916 has 11.49 GiB memory in use. Process 2890913 has 4.67 GiB memory in use. Process 2890918 has 11.49 GiB memory in use. Process 2989730 has 1.42 GiB memory in use. Of the allocated memory 3.69 GiB is allocated by PyTorch, and 622.53 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00743.jpg: CUDA out of memory. Tried to allocate 1.35 GiB. GPU 0 has a total capacity of 44.31 GiB of which 622.50 MiB is free. Process 2813807 has 934.00 MiB memory in use. Including non-PyTorch memory, this process has 4.97 GiB memory in use. Process 2838531 has 2.25 GiB memory in use. Process 2840224 has 1.07 GiB memory in use. Process 2838743 has 788.00 MiB memory in use. Process 2876965 has 4.41 GiB memory in use. Process 2890916 has 11.49 GiB memory in use. Process 2890913 has 4.67 GiB memory in use. Process 2890918 has 11.49 GiB memory in use. Process 2989730 has 1.42 GiB memory in use. Of the allocated memory 3.69 GiB is allocated by PyTorch, and 800.53 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+    kadid10k       n   2000   SRCC 0.9271   PLCC 0.9295
+    koniq10k       n   2015   SRCC 0.5317   PLCC 0.5377
+    spaq           n   2221   SRCC 0.2924   PLCC 0.3031
+    macro                     SRCC 0.5837   PLCC 0.5901   worst 0.2924 on spaq
+    within-ref                SRCC 0.9327   (16 references)
+
+  latency batch 1     448.5 ms p50, 684.6 ms p95
+  throughput          0.8 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          23,512,129
+
+per-image scores -> arniqa-kadid_val.csv
+=== arniqa-kadid on heldout === 10:30
+arniqa-kadid on 8010 images from the val split, native resolution (higher is better)
+  0/8010
+  500/8010
+  1000/8010
+  1500/8010
+  2000/8010
+  2500/8010
+  3000/8010
+  3500/8010
+  4000/8010
+  4500/8010
+  5000/8010
+  5500/8010
+  6000/8010
+  6500/8010
+  7000/8010
+  7500/8010
+  8000/8010
+
+    agiqa3k        n   2982   SRCC 0.4846   PLCC 0.5309
+    clive          n   1162   SRCC 0.4517   PLCC 0.5244
+    csiq           n    866   SRCC 0.8944   PLCC 0.9081
+    tid2013        n   3000   SRCC 0.7002   PLCC 0.7133
+    macro                     SRCC 0.6821   PLCC 0.7153   worst 0.4517 on clive   (agiqa3k excluded)
+    within-ref                SRCC 0.5099   (354 references)
+
+  latency batch 1     336.2 ms p50, 441.1 ms p95
+  throughput          3.8 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          23,512,129
+
+per-image scores -> arniqa-kadid_heldout.csv
+=== arniqa-spaq on val === 11:05
+Downloading: "https://hf-mirror.com/chaofengc/IQA-PyTorch-Weights/resolve/main/regressor_spaq.pth" to /home/sergey/.cache/torch/hub/pyiqa/regressor_spaq.pth
+
+  0%|          | 0.00/19.2k [00:00<?, ?B/s]100%|██████████| 19.2k/19.2k [00:00<00:00, 219kB/s]
+arniqa-spaq on 6240 images from the val split, native resolution (higher is better)
+  0/6240
+  500/6240
+  1000/6240
+  1500/6240
+  2000/6240
+  2500/6240
+  3000/6240
+  3500/6240
+  4000/6240
+  4500/6240
+  5000/6240
+  5500/6240
+  6000/6240
+
+  2149 images could not be scored and are excluded:
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00004.jpg: CUDA out of memory. Tried to allocate 136.00 MiB. GPU 0 has a total capacity of 44.31 GiB of which 16.44 MiB is free. Process 2890916 has 524.00 MiB memory in use. Process 2890913 has 4.68 GiB memory in use. Process 2890918 has 524.00 MiB memory in use. Process 3570546 has 35.85 GiB memory in use. Process 3649326 has 788.00 MiB memory in use. Process 3650585 has 848.00 MiB memory in use. Including non-PyTorch memory, this process has 806.00 MiB memory in use. Of the allocated memory 268.05 MiB is allocated by PyTorch, and 31.95 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00024.jpg: CUDA out of memory. Tried to allocate 140.00 MiB. GPU 0 has a total capacity of 44.31 GiB of which 10.44 MiB is free. Process 2890916 has 524.00 MiB memory in use. Process 2890913 has 4.68 GiB memory in use. Process 2890918 has 524.00 MiB memory in use. Process 3570546 has 35.85 GiB memory in use. Process 3649326 has 788.00 MiB memory in use. Process 3650585 has 848.00 MiB memory in use. Including non-PyTorch memory, this process has 812.00 MiB memory in use. Of the allocated memory 272.84 MiB is allocated by PyTorch, and 33.16 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00042.jpg: CUDA out of memory. Tried to allocate 38.00 MiB. GPU 0 has a total capacity of 44.31 GiB of which 36.44 MiB is free. Process 2890916 has 524.00 MiB memory in use. Process 2890913 has 4.68 GiB memory in use. Process 2890918 has 524.00 MiB memory in use. Process 3570546 has 35.85 GiB memory in use. Process 3649326 has 788.00 MiB memory in use. Process 3650585 has 848.00 MiB memory in use. Including non-PyTorch memory, this process has 786.00 MiB memory in use. Of the allocated memory 246.59 MiB is allocated by PyTorch, and 33.41 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00044.jpg: CUDA out of memory. Tried to allocate 36.00 MiB. GPU 0 has a total capacity of 44.31 GiB of which 36.44 MiB is free. Process 2890916 has 524.00 MiB memory in use. Process 2890913 has 4.68 GiB memory in use. Process 2890918 has 524.00 MiB memory in use. Process 3570546 has 35.85 GiB memory in use. Process 3649326 has 788.00 MiB memory in use. Process 3650585 has 848.00 MiB memory in use. Including non-PyTorch memory, this process has 786.00 MiB memory in use. Of the allocated memory 237.59 MiB is allocated by PyTorch, and 42.41 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00058.jpg: CUDA out of memory. Tried to allocate 184.00 MiB. GPU 0 has a total capacity of 44.31 GiB of which 186.44 MiB is free. Process 2890916 has 524.00 MiB memory in use. Process 2890913 has 4.68 GiB memory in use. Process 2890918 has 524.00 MiB memory in use. Process 3570546 has 35.85 GiB memory in use. Process 3649326 has 788.00 MiB memory in use. Process 3650585 has 848.00 MiB memory in use. Including non-PyTorch memory, this process has 636.00 MiB memory in use. Of the allocated memory 98.05 MiB is allocated by PyTorch, and 31.95 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    ... and 2144 more
+
+    kadid10k       n   2000   SRCC 0.4576   PLCC 0.4672
+    koniq10k       n   2015   SRCC 0.7807   PLCC 0.7947
+    spaq           n     76   SRCC 0.6530   PLCC 0.6447
+    macro                     SRCC 0.6304   PLCC 0.6355   worst 0.4576 on kadid10k
+    within-ref                SRCC 0.5241   (16 references)
+
+  latency batch 1     291.4 ms p50, 400.6 ms p95
+  throughput          2.2 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          23,512,129
+
+per-image scores -> arniqa-spaq_val.csv
+=== arniqa-spaq on heldout === 11:37
+arniqa-spaq on 8010 images from the val split, native resolution (higher is better)
+  0/8010
+  500/8010
+  1000/8010
+  1500/8010
+  2000/8010
+  2500/8010
+  3000/8010
+  3500/8010
+  4000/8010
+  4500/8010
+  5000/8010
+  5500/8010
+  6000/8010
+  6500/8010
+  7000/8010
+  7500/8010
+  8000/8010
+
+    agiqa3k        n   2982   SRCC 0.5022   PLCC 0.5870
+    clive          n   1162   SRCC 0.7014   PLCC 0.7396
+    csiq           n    866   SRCC 0.3331   PLCC 0.4026
+    tid2013        n   3000   SRCC 0.2974   PLCC 0.4162
+    macro                     SRCC 0.4440   PLCC 0.5195   worst 0.2974 on tid2013   (agiqa3k excluded)
+    within-ref                SRCC 0.4787   (354 references)
+
+  latency batch 1     221.4 ms p50, 354.7 ms p95
+  throughput          3.3 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          23,512,129
+
+per-image scores -> arniqa-spaq_heldout.csv
+=== arniqa-clive on val === 12:17
+Downloading: "https://hf-mirror.com/chaofengc/IQA-PyTorch-Weights/resolve/main/regressor_clive.pth" to /home/sergey/.cache/torch/hub/pyiqa/regressor_clive.pth
+
+  0%|          | 0.00/19.0k [00:00<?, ?B/s]100%|██████████| 19.0k/19.0k [00:00<00:00, 292kB/s]
+arniqa-clive on 6240 images from the val split, native resolution (higher is better)
+  0/6240
+  500/6240
+  1000/6240
+  1500/6240
+  2000/6240
+  2500/6240
+  3000/6240
+  3500/6240
+  4000/6240
+  4500/6240
+  5000/6240
+  5500/6240
+  6000/6240
+
+  206 images could not be scored and are excluded:
+    /home/sergey/iqa-data/koniq10k/koniq10k/1024x768/10013822223.jpg: CUDA out of memory. Tried to allocate 48.00 MiB. GPU 0 has a total capacity of 44.31 GiB of which 50.38 MiB is free. Process 3570546 has 39.91 GiB memory in use. Process 3787036 has 2.79 GiB memory in use. Process 3796584 has 900.00 MiB memory in use. Including non-PyTorch memory, this process has 646.00 MiB memory in use. Of the allocated memory 119.05 MiB is allocated by PyTorch, and 22.95 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    /home/sergey/iqa-data/koniq10k/koniq10k/1024x768/10022757465.jpg: CUDA out of memory. Tried to allocate 48.00 MiB. GPU 0 has a total capacity of 44.31 GiB of which 30.38 MiB is free. Process 3570546 has 39.91 GiB memory in use. Process 3787036 has 2.79 GiB memory in use. Process 3796584 has 900.00 MiB memory in use. Including non-PyTorch memory, this process has 666.00 MiB memory in use. Of the allocated memory 119.05 MiB is allocated by PyTorch, and 42.95 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    /home/sergey/iqa-data/koniq10k/koniq10k/1024x768/10031298826.jpg: CUDA out of memory. Tried to allocate 48.00 MiB. GPU 0 has a total capacity of 44.31 GiB of which 30.38 MiB is free. Process 3570546 has 39.91 GiB memory in use. Process 3787036 has 2.79 GiB memory in use. Process 3796584 has 900.00 MiB memory in use. Including non-PyTorch memory, this process has 666.00 MiB memory in use. Of the allocated memory 119.05 MiB is allocated by PyTorch, and 42.95 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    /home/sergey/iqa-data/koniq10k/koniq10k/1024x768/10058760545.jpg: CUDA out of memory. Tried to allocate 48.00 MiB. GPU 0 has a total capacity of 44.31 GiB of which 30.38 MiB is free. Process 3570546 has 39.91 GiB memory in use. Process 3787036 has 2.79 GiB memory in use. Process 3796584 has 900.00 MiB memory in use. Including non-PyTorch memory, this process has 666.00 MiB memory in use. Of the allocated memory 119.05 MiB is allocated by PyTorch, and 42.95 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    /home/sergey/iqa-data/koniq10k/koniq10k/1024x768/10069534975.jpg: CUDA out of memory. Tried to allocate 48.00 MiB. GPU 0 has a total capacity of 44.31 GiB of which 30.38 MiB is free. Process 3570546 has 39.91 GiB memory in use. Process 3787036 has 2.79 GiB memory in use. Process 3796584 has 900.00 MiB memory in use. Including non-PyTorch memory, this process has 666.00 MiB memory in use. Of the allocated memory 119.05 MiB is allocated by PyTorch, and 42.95 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    ... and 201 more
+
+    kadid10k       n   2000   SRCC 0.3942   PLCC 0.4586
+    koniq10k       n   1809   SRCC 0.7515   PLCC 0.7776
+    spaq           n   2225   SRCC 0.3868   PLCC 0.3891
+    macro                     SRCC 0.5109   PLCC 0.5418   worst 0.3868 on spaq
+    within-ref                SRCC 0.4274   (16 references)
+
+  latency batch 1     158.7 ms p50, 219.6 ms p95
+  throughput          2.8 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          23,512,129
+
+per-image scores -> arniqa-clive_val.csv
+=== arniqa-clive on heldout === 12:54
+arniqa-clive on 8010 images from the val split, native resolution (higher is better)
+  0/8010
+  500/8010
+  1000/8010
+  1500/8010
+  2000/8010
+  2500/8010
+  3000/8010
+  3500/8010
+  4000/8010
+  4500/8010
+  5000/8010
+  5500/8010
+  6000/8010
+  6500/8010
+  7000/8010
+  7500/8010
+  8000/8010
+
+    agiqa3k        n   2982   SRCC 0.5231   PLCC 0.5955
+    clive          n   1162   SRCC 0.8542   PLCC 0.8766
+    csiq           n    866   SRCC 0.3426   PLCC 0.4169
+    tid2013        n   3000   SRCC 0.2282   PLCC 0.4005
+    macro                     SRCC 0.4750   PLCC 0.5647   worst 0.2282 on tid2013   (agiqa3k excluded)
+    within-ref                SRCC 0.4834   (354 references)
+
+  latency batch 1     118.5 ms p50, 178.5 ms p95
+  throughput          7.8 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          23,512,129
+
+per-image scores -> arniqa-clive_heldout.csv
+=== arniqa-csiq on val === 13:11
+Downloading: "https://hf-mirror.com/chaofengc/IQA-PyTorch-Weights/resolve/main/regressor_csiq.pth" to /home/sergey/.cache/torch/hub/pyiqa/regressor_csiq.pth
+
+  0%|          | 0.00/19.2k [00:00<?, ?B/s]100%|██████████| 19.2k/19.2k [00:00<00:00, 216kB/s]
+arniqa-csiq on 6240 images from the val split, native resolution (higher is better)
+  0/6240
+  500/6240
+  1000/6240
+  1500/6240
+  2000/6240
+  2500/6240
+  3000/6240
+  3500/6240
+  4000/6240
+  4500/6240
+  5000/6240
+  5500/6240
+  6000/6240
+
+    kadid10k       n   2000   SRCC 0.7392   PLCC 0.7485
+    koniq10k       n   2015   SRCC 0.5234   PLCC 0.5696
+    spaq           n   2225   SRCC 0.4499   PLCC 0.4262
+    macro                     SRCC 0.5708   PLCC 0.5814   worst 0.4499 on spaq
+    within-ref                SRCC 0.7723   (16 references)
+
+  latency batch 1     126.0 ms p50, 186.9 ms p95
+  throughput          3.1 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          23,512,129
+
+per-image scores -> arniqa-csiq_val.csv
+=== arniqa-csiq on heldout === 13:44
+arniqa-csiq on 8010 images from the val split, native resolution (higher is better)
+  0/8010
+  500/8010
+  1000/8010
+  1500/8010
+  2000/8010
+  2500/8010
+  3000/8010
+  3500/8010
+  4000/8010
+  4500/8010
+  5000/8010
+  5500/8010
+  6000/8010
+  6500/8010
+  7000/8010
+  7500/8010
+  8000/8010
+
+    agiqa3k        n   2982   SRCC 0.6176   PLCC 0.7022
+    clive          n   1162   SRCC 0.4501   PLCC 0.5022
+    csiq           n    866   SRCC 0.9715   PLCC 0.9790
+    tid2013        n   3000   SRCC 0.6932   PLCC 0.7328
+    macro                     SRCC 0.7050   PLCC 0.7380   worst 0.4501 on clive   (agiqa3k excluded)
+    within-ref                SRCC 0.6397   (354 references)
+
+  latency batch 1     112.7 ms p50, 180.5 ms p95
+  throughput          8.4 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          23,512,129
+
+per-image scores -> arniqa-csiq_heldout.csv
+=== arniqa-tid on val === 14:00
+Downloading: "https://hf-mirror.com/chaofengc/IQA-PyTorch-Weights/resolve/main/regressor_tid2013.pth" to /home/sergey/.cache/torch/hub/pyiqa/regressor_tid2013.pth
+
+  0%|          | 0.00/19.2k [00:00<?, ?B/s]100%|██████████| 19.2k/19.2k [00:00<00:00, 215kB/s]
+arniqa-tid on 6240 images from the val split, native resolution (higher is better)
+  0/6240
+  500/6240
+  1000/6240
+  1500/6240
+  2000/6240
+  2500/6240
+  3000/6240
+  3500/6240
+  4000/6240
+  4500/6240
+  5000/6240
+  5500/6240
+  6000/6240
+
+    kadid10k       n   2000   SRCC 0.6939   PLCC 0.6865
+    koniq10k       n   2015   SRCC 0.3891   PLCC 0.4087
+    spaq           n   2225   SRCC 0.4822   PLCC 0.4771
+    macro                     SRCC 0.5218   PLCC 0.5241   worst 0.3891 on koniq10k
+    within-ref                SRCC 0.7839   (16 references)
+
+  latency batch 1     85.8 ms p50, 117.4 ms p95
+  throughput          3.5 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          23,512,129
+
+per-image scores -> arniqa-tid_val.csv
+=== arniqa-tid on heldout === 14:30
+arniqa-tid on 8010 images from the val split, native resolution (higher is better)
+  0/8010
+  500/8010
+  1000/8010
+  1500/8010
+  2000/8010
+  2500/8010
+  3000/8010
+  3500/8010
+  4000/8010
+  4500/8010
+  5000/8010
+  5500/8010
+  6000/8010
+  6500/8010
+  7000/8010
+  7500/8010
+  8000/8010
+
+    agiqa3k        n   2982   SRCC 0.4000   PLCC 0.4443
+    clive          n   1162   SRCC 0.3248   PLCC 0.3660
+    csiq           n    866   SRCC 0.8478   PLCC 0.8667
+    tid2013        n   3000   SRCC 0.9146   PLCC 0.9203
+    macro                     SRCC 0.6957   PLCC 0.7177   worst 0.3248 on clive   (agiqa3k excluded)
+    within-ref                SRCC 0.4846   (354 references)
+
+  latency batch 1     28.5 ms p50, 94.1 ms p95
+  throughput          26.3 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          23,512,129
+
+per-image scores -> arniqa-tid_heldout.csv
+### queue finished 14:35

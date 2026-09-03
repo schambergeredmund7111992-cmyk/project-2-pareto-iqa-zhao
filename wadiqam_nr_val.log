@@ -1,0 +1,27 @@
+Loading pretrained model WaDIQaM from /home/sergey/.cache/torch/hub/pyiqa/WaDIQaM-NR-koniq-aaffea29.pth
+wadiqam_nr on 6240 images from the val split, native resolution (higher is better)
+  0/6240
+  500/6240
+  1000/6240
+  1500/6240
+  2000/6240
+  2500/6240
+  3000/6240
+  3500/6240
+  4000/6240
+  4500/6240
+  5000/6240
+  5500/6240
+  6000/6240
+
+    kadid10k       n   2000   SRCC 0.2286   PLCC 0.2893
+    koniq10k       n   2015   SRCC 0.8090   PLCC 0.8033
+    spaq           n   2225   SRCC 0.4353   PLCC 0.4286
+    macro                     SRCC 0.4909   PLCC 0.5070   worst 0.2286 on kadid10k
+    within-ref                SRCC 0.2364   (16 references)
+
+  latency batch 1     12.1 ms p50, 98.5 ms p95
+  throughput          4.5 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          5,238,562
+
+per-image scores -> wadiqam_nr_val.csv

@@ -1,0 +1,27 @@
+Loading pretrained model HyperNet from /home/sergey/.cache/torch/hub/pyiqa/HyperIQA-resnet50-koniq10k-c96c41b1.pth
+hyperiqa on 6240 images from the val split, longer side <= 224px (higher is better)
+  0/6240
+  500/6240
+  1000/6240
+  1500/6240
+  2000/6240
+  2500/6240
+  3000/6240
+  3500/6240
+  4000/6240
+  4500/6240
+  5000/6240
+  5500/6240
+  6000/6240
+
+    kadid10k       n   2000   SRCC 0.5481   PLCC 0.5716
+    koniq10k       n   2015   SRCC 0.6617   PLCC 0.7273
+    spaq           n   2225   SRCC 0.7506   PLCC 0.7497
+    macro                     SRCC 0.6534   PLCC 0.6829   worst 0.5481 on kadid10k
+    within-ref                SRCC 0.6861   (16 references)
+
+  latency batch 1     39.6 ms p50, 40.6 ms p95
+  throughput          12.1 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          27,375,369
+
+per-image scores -> hyperiqa_val_224.csv

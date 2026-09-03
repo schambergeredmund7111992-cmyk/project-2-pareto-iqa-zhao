@@ -1,0 +1,34 @@
+{
+  "model": "Q-Align",
+  "model_name": "qalign",
+  "checkpoint": "q-future/one-align",
+  "design_space": "External baseline",
+  "heldout_csv": "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/heldout.csv",
+  "heldout_rows": 8010,
+  "training_datasets": [
+    "kadid10k",
+    "koniq10k",
+    "spaq"
+  ],
+  "heldout_datasets": [
+    "agiqa3k",
+    "clive",
+    "csiq",
+    "tid2013"
+  ],
+  "natural_macro_datasets": [
+    "clive",
+    "csiq",
+    "tid2013"
+  ],
+  "agiqa3k_in_macro": false,
+  "device": "cuda",
+  "gpu": "NVIDIA L40",
+  "precision": "torch.float16",
+  "throughput_batch_size": 1,
+  "warmup_iterations": 5,
+  "latency_iterations": 30,
+  "flops_method": "PyTorch FlopCounterMode",
+  "flops_scope": "single-image Q-Align inference",
+  "hf_offline": "1"
+}

@@ -1,0 +1,350 @@
+=== musiq-spaq on val === 03:39
+Loading pretrained model MUSIQ from /home/sergey/.cache/torch/hub/pyiqa/musiq_spaq_ckpt-358bb6af.pth
+musiq-spaq on 6240 images from the val split, native resolution (higher is better)
+  0/6240
+  500/6240
+  1000/6240
+  1500/6240
+  2000/6240
+  2500/6240
+  3000/6240
+  3500/6240
+  4000/6240
+  4500/6240
+  5000/6240
+  5500/6240
+  6000/6240
+
+  109 images could not be scored and are excluded:
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00106.jpg: CUDA out of memory. Tried to allocate 8.41 GiB. GPU 0 has a total capacity of 44.31 GiB of which 5.55 GiB is free. Process 597359 has 23.62 GiB memory in use. Process 639669 has 424.00 MiB memory in use. Process 639674 has 424.00 MiB memory in use. Process 639673 has 424.00 MiB memory in use. Process 639672 has 424.00 MiB memory in use. Including non-PyTorch memory, this process has 13.02 GiB memory in use. Process 1196893 has 424.00 MiB memory in use. Of the allocated memory 9.12 GiB is allocated by PyTorch, and 3.40 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00561.jpg: CUDA out of memory. Tried to allocate 11.20 GiB. GPU 0 has a total capacity of 44.31 GiB of which 2.76 GiB is free. Process 597359 has 23.62 GiB memory in use. Process 639669 has 424.00 MiB memory in use. Process 639674 has 424.00 MiB memory in use. Process 639673 has 424.00 MiB memory in use. Process 639672 has 424.00 MiB memory in use. Including non-PyTorch memory, this process has 15.81 GiB memory in use. Process 1196893 has 424.00 MiB memory in use. Of the allocated memory 12.01 GiB is allocated by PyTorch, and 3.31 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00579.jpg: CUDA out of memory. Tried to allocate 11.20 GiB. GPU 0 has a total capacity of 44.31 GiB of which 2.76 GiB is free. Process 597359 has 23.62 GiB memory in use. Process 639669 has 424.00 MiB memory in use. Process 639674 has 424.00 MiB memory in use. Process 639673 has 424.00 MiB memory in use. Process 639672 has 424.00 MiB memory in use. Including non-PyTorch memory, this process has 15.81 GiB memory in use. Process 1196893 has 424.00 MiB memory in use. Of the allocated memory 12.01 GiB is allocated by PyTorch, and 3.31 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00743.jpg: CUDA out of memory. Tried to allocate 11.20 GiB. GPU 0 has a total capacity of 44.31 GiB of which 2.76 GiB is free. Process 597359 has 23.62 GiB memory in use. Process 639669 has 424.00 MiB memory in use. Process 639674 has 424.00 MiB memory in use. Process 639673 has 424.00 MiB memory in use. Process 639672 has 424.00 MiB memory in use. Including non-PyTorch memory, this process has 15.81 GiB memory in use. Process 1196893 has 424.00 MiB memory in use. Of the allocated memory 12.01 GiB is allocated by PyTorch, and 3.31 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00845.jpg: CUDA out of memory. Tried to allocate 11.20 GiB. GPU 0 has a total capacity of 44.31 GiB of which 2.76 GiB is free. Process 597359 has 23.62 GiB memory in use. Process 639669 has 424.00 MiB memory in use. Process 639674 has 424.00 MiB memory in use. Process 639673 has 424.00 MiB memory in use. Process 639672 has 424.00 MiB memory in use. Including non-PyTorch memory, this process has 15.81 GiB memory in use. Process 1196893 has 424.00 MiB memory in use. Of the allocated memory 12.01 GiB is allocated by PyTorch, and 3.31 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    ... and 104 more
+
+    kadid10k       n   2000   SRCC 0.2854   PLCC 0.3910
+    koniq10k       n   2015   SRCC 0.7989   PLCC 0.8180
+    spaq           n   2116   SRCC 0.7045   PLCC 0.6987
+    macro                     SRCC 0.5963   PLCC 0.6359   worst 0.2854 on kadid10k
+    within-ref                SRCC 0.3587   (16 references)
+
+  latency batch 1     89.7 ms p50, 268.1 ms p95
+  throughput          1.3 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          27,125,825
+
+per-image scores -> musiq-spaq_val.csv
+=== musiq-spaq on heldout === 04:57
+Loading pretrained model MUSIQ from /home/sergey/.cache/torch/hub/pyiqa/musiq_spaq_ckpt-358bb6af.pth
+musiq-spaq on 8010 images from the val split, native resolution (higher is better)
+  0/8010
+  500/8010
+  1000/8010
+  1500/8010
+  2000/8010
+  2500/8010
+  3000/8010
+  3500/8010
+  4000/8010
+  4500/8010
+  5000/8010
+  5500/8010
+  6000/8010
+  6500/8010
+  7000/8010
+  7500/8010
+  8000/8010
+
+    agiqa3k        n   2982   SRCC 0.5633   PLCC 0.6743
+    clive          n   1162   SRCC 0.7890   PLCC 0.8134
+    csiq           n    866   SRCC 0.6251   PLCC 0.7069
+    tid2013        n   3000   SRCC 0.4707   PLCC 0.6197
+    macro                     SRCC 0.6282   PLCC 0.7134   worst 0.4707 on tid2013   (agiqa3k excluded)
+    within-ref                SRCC 0.5625   (354 references)
+
+  latency batch 1     102.8 ms p50, 237.5 ms p95
+  throughput          6.3 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          27,125,825
+
+per-image scores -> musiq-spaq_heldout.csv
+=== maniqa-kadid on val === 05:19
+Downloading: "https://huggingface.co/chaofengc/IQA-PyTorch-Weights/resolve/main/ckpt_kadid10k.pt" to /home/sergey/.cache/torch/hub/pyiqa/ckpt_kadid10k.pt
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/urllib/request.py", line 1344, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "/usr/lib/python3.12/http/client.py", line 1365, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.12/http/client.py", line 1411, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.12/http/client.py", line 1360, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.12/http/client.py", line 1120, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.12/http/client.py", line 1064, in send
+    self.connect()
+  File "/usr/lib/python3.12/http/client.py", line 1499, in connect
+    super().connect()
+  File "/usr/lib/python3.12/http/client.py", line 1030, in connect
+    self.sock = self._create_connection(
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/socket.py", line 852, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.12/socket.py", line 837, in create_connection
+    sock.connect(sa)
+TimeoutError: [Errno 110] Connection timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/run_pyiqa.py", line 176, in <module>
+    main()
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/run_pyiqa.py", line 54, in main
+    metric = pyiqa.create_metric(args.metric, device=device)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/pyiqa/api_helpers.py", line 15, in create_metric
+    metric = InferenceModel(metric_name, as_loss=as_loss, device=device, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/pyiqa/models/inference_model.py", line 67, in __init__
+    self.net = build_network(net_opts)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/pyiqa/archs/__init__.py", line 80, in build_network
+    net = ARCH_REGISTRY.get(network_type)(**opt)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/pyiqa/archs/maniqa_arch.py", line 189, in __init__
+    load_pretrained_network(self, default_model_urls[train_dataset], True)
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/pyiqa/archs/arch_util.py", line 224, in load_pretrained_network
+    model_path = load_file_from_url(model_path)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/pyiqa/utils/download_util.py", line 103, in load_file_from_url
+    download_url_to_file(url, cached_file, hash_prefix=None, progress=progress)
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/torch/hub.py", line 708, in download_url_to_file
+    u = urlopen(req)
+        ^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 515, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 532, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 1392, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 1347, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 110] Connection timed out>
+=== maniqa-kadid on heldout === 05:24
+Downloading: "https://huggingface.co/chaofengc/IQA-PyTorch-Weights/resolve/main/ckpt_kadid10k.pt" to /home/sergey/.cache/torch/hub/pyiqa/ckpt_kadid10k.pt
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/urllib/request.py", line 1344, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "/usr/lib/python3.12/http/client.py", line 1365, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.12/http/client.py", line 1411, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.12/http/client.py", line 1360, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.12/http/client.py", line 1120, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.12/http/client.py", line 1064, in send
+    self.connect()
+  File "/usr/lib/python3.12/http/client.py", line 1499, in connect
+    super().connect()
+  File "/usr/lib/python3.12/http/client.py", line 1030, in connect
+    self.sock = self._create_connection(
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/socket.py", line 852, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.12/socket.py", line 837, in create_connection
+    sock.connect(sa)
+TimeoutError: [Errno 110] Connection timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/run_pyiqa.py", line 176, in <module>
+    main()
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/run_pyiqa.py", line 54, in main
+    metric = pyiqa.create_metric(args.metric, device=device)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/pyiqa/api_helpers.py", line 15, in create_metric
+    metric = InferenceModel(metric_name, as_loss=as_loss, device=device, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/pyiqa/models/inference_model.py", line 67, in __init__
+    self.net = build_network(net_opts)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/pyiqa/archs/__init__.py", line 80, in build_network
+    net = ARCH_REGISTRY.get(network_type)(**opt)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/pyiqa/archs/maniqa_arch.py", line 189, in __init__
+    load_pretrained_network(self, default_model_urls[train_dataset], True)
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/pyiqa/archs/arch_util.py", line 224, in load_pretrained_network
+    model_path = load_file_from_url(model_path)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/pyiqa/utils/download_util.py", line 103, in load_file_from_url
+    download_url_to_file(url, cached_file, hash_prefix=None, progress=progress)
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/torch/hub.py", line 708, in download_url_to_file
+    u = urlopen(req)
+        ^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 515, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 532, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 1392, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 1347, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 110] Connection timed out>
+=== topiq_nr-spaq on val === 05:29
+Loading pretrained model CFANet from /home/sergey/.cache/torch/hub/pyiqa/cfanet_nr_spaq_res50-a7f799ac.pth
+topiq_nr-spaq on 6240 images from the val split, native resolution (higher is better)
+  0/6240
+  500/6240
+  1000/6240
+  1500/6240
+  2000/6240
+  2500/6240
+  3000/6240
+  3500/6240
+  4000/6240
+  4500/6240
+  5000/6240
+  5500/6240
+  6000/6240
+
+  2150 images could not be scored and are excluded:
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00004.jpg: CUDA out of memory. Tried to allocate 1.98 GiB. GPU 0 has a total capacity of 44.31 GiB of which 1.64 GiB is free. Process 597359 has 36.94 GiB memory in use. Process 639669 has 424.00 MiB memory in use. Process 639674 has 424.00 MiB memory in use. Process 639673 has 424.00 MiB memory in use. Process 639672 has 424.00 MiB memory in use. Including non-PyTorch memory, this process has 4.03 GiB memory in use. Of the allocated memory 2.57 GiB is allocated by PyTorch, and 988.02 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00024.jpg: CUDA out of memory. Tried to allocate 2.14 GiB. GPU 0 has a total capacity of 44.31 GiB of which 2.03 GiB is free. Process 597359 has 36.94 GiB memory in use. Process 639669 has 424.00 MiB memory in use. Process 639674 has 424.00 MiB memory in use. Process 639673 has 424.00 MiB memory in use. Process 639672 has 424.00 MiB memory in use. Including non-PyTorch memory, this process has 3.65 GiB memory in use. Of the allocated memory 2.64 GiB is allocated by PyTorch, and 528.08 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00042.jpg: CUDA out of memory. Tried to allocate 2.42 GiB. GPU 0 has a total capacity of 44.31 GiB of which 1.88 GiB is free. Process 597359 has 36.94 GiB memory in use. Process 639669 has 424.00 MiB memory in use. Process 639674 has 424.00 MiB memory in use. Process 639673 has 424.00 MiB memory in use. Process 639672 has 424.00 MiB memory in use. Including non-PyTorch memory, this process has 3.80 GiB memory in use. Of the allocated memory 2.80 GiB is allocated by PyTorch, and 511.14 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00044.jpg: CUDA out of memory. Tried to allocate 2.14 GiB. GPU 0 has a total capacity of 44.31 GiB of which 1.88 GiB is free. Process 597359 has 36.94 GiB memory in use. Process 639669 has 424.00 MiB memory in use. Process 639674 has 424.00 MiB memory in use. Process 639673 has 424.00 MiB memory in use. Process 639672 has 424.00 MiB memory in use. Including non-PyTorch memory, this process has 3.80 GiB memory in use. Of the allocated memory 2.65 GiB is allocated by PyTorch, and 672.42 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00058.jpg: CUDA out of memory. Tried to allocate 972.00 MiB. GPU 0 has a total capacity of 44.31 GiB of which 419.75 MiB is free. Process 597359 has 36.94 GiB memory in use. Process 639669 has 424.00 MiB memory in use. Process 639674 has 424.00 MiB memory in use. Process 639673 has 424.00 MiB memory in use. Process 639672 has 424.00 MiB memory in use. Including non-PyTorch memory, this process has 5.27 GiB memory in use. Of the allocated memory 3.64 GiB is allocated by PyTorch, and 1.13 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    ... and 2145 more
+
+    kadid10k       n   2000   SRCC 0.4416   PLCC 0.5185
+    koniq10k       n   2015   SRCC 0.8142   PLCC 0.8257
+    spaq           n     75   SRCC 0.6327   PLCC 0.7787
+    macro                     SRCC 0.6295   PLCC 0.7077   worst 0.4416 on kadid10k
+    within-ref                SRCC 0.4905   (16 references)
+
+  latency batch 1     63.2 ms p50, 120.1 ms p95
+  throughput          4.9 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          45,196,934
+
+per-image scores -> topiq_nr-spaq_val.csv
+=== topiq_nr-spaq on heldout === 05:43
+Loading pretrained model CFANet from /home/sergey/.cache/torch/hub/pyiqa/cfanet_nr_spaq_res50-a7f799ac.pth
+topiq_nr-spaq on 8010 images from the val split, native resolution (higher is better)
+  0/8010
+  500/8010
+  1000/8010
+  1500/8010
+  2000/8010
+  2500/8010
+  3000/8010
+  3500/8010
+  4000/8010
+  4500/8010
+  5000/8010
+  5500/8010
+  6000/8010
+  6500/8010
+  7000/8010
+  7500/8010
+  8000/8010
+
+    agiqa3k        n   2982   SRCC 0.5605   PLCC 0.6439
+    clive          n   1162   SRCC 0.7871   PLCC 0.7984
+    csiq           n    866   SRCC 0.6532   PLCC 0.7026
+    tid2013        n   3000   SRCC 0.4509   PLCC 0.6051
+    macro                     SRCC 0.6304   PLCC 0.7021   worst 0.4509 on tid2013   (agiqa3k excluded)
+    within-ref                SRCC 0.5663   (354 references)
+
+  latency batch 1     55.4 ms p50, 93.5 ms p95
+  throughput          22.3 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          45,196,934
+
+per-image scores -> topiq_nr-spaq_heldout.csv
+=== clipiqa+ on val === 05:49
+clipiqa+ on 6240 images from the val split, native resolution (higher is better)
+  0/6240
+  500/6240
+  1000/6240
+  1500/6240
+  2000/6240
+  2500/6240
+  3000/6240
+  3500/6240
+  4000/6240
+  4500/6240
+  5000/6240
+  5500/6240
+  6000/6240
+
+  309 images could not be scored and are excluded:
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00106.jpg: CUDA out of memory. Tried to allocate 1.17 GiB. GPU 0 has a total capacity of 44.31 GiB of which 403.75 MiB is free. Process 597359 has 36.94 GiB memory in use. Process 639669 has 424.00 MiB memory in use. Process 639674 has 424.00 MiB memory in use. Process 639673 has 424.00 MiB memory in use. Process 639672 has 424.00 MiB memory in use. Including non-PyTorch memory, this process has 5.28 GiB memory in use. Of the allocated memory 2.59 GiB is allocated by PyTorch, and 2.20 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00139.jpg: CUDA out of memory. Tried to allocate 972.00 MiB. GPU 0 has a total capacity of 44.31 GiB of which 403.75 MiB is free. Process 597359 has 36.94 GiB memory in use. Process 639669 has 424.00 MiB memory in use. Process 639674 has 424.00 MiB memory in use. Process 639673 has 424.00 MiB memory in use. Process 639672 has 424.00 MiB memory in use. Including non-PyTorch memory, this process has 5.28 GiB memory in use. Of the allocated memory 3.12 GiB is allocated by PyTorch, and 1.67 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00140.jpg: CUDA out of memory. Tried to allocate 972.00 MiB. GPU 0 has a total capacity of 44.31 GiB of which 403.75 MiB is free. Process 597359 has 36.94 GiB memory in use. Process 639669 has 424.00 MiB memory in use. Process 639674 has 424.00 MiB memory in use. Process 639673 has 424.00 MiB memory in use. Process 639672 has 424.00 MiB memory in use. Including non-PyTorch memory, this process has 5.28 GiB memory in use. Of the allocated memory 3.12 GiB is allocated by PyTorch, and 1.67 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00364.jpg: CUDA out of memory. Tried to allocate 972.00 MiB. GPU 0 has a total capacity of 44.31 GiB of which 403.75 MiB is free. Process 597359 has 36.94 GiB memory in use. Process 639669 has 424.00 MiB memory in use. Process 639674 has 424.00 MiB memory in use. Process 639673 has 424.00 MiB memory in use. Process 639672 has 424.00 MiB memory in use. Including non-PyTorch memory, this process has 5.28 GiB memory in use. Of the allocated memory 3.12 GiB is allocated by PyTorch, and 1.67 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00387.jpg: CUDA out of memory. Tried to allocate 972.00 MiB. GPU 0 has a total capacity of 44.31 GiB of which 403.75 MiB is free. Process 597359 has 36.94 GiB memory in use. Process 639669 has 424.00 MiB memory in use. Process 639674 has 424.00 MiB memory in use. Process 639673 has 424.00 MiB memory in use. Process 639672 has 424.00 MiB memory in use. Including non-PyTorch memory, this process has 5.28 GiB memory in use. Of the allocated memory 3.12 GiB is allocated by PyTorch, and 1.67 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    ... and 304 more
+
+    kadid10k       n   2000   SRCC 0.6583   PLCC 0.6527
+    koniq10k       n   2015   SRCC 0.9007   PLCC 0.9135
+    spaq           n   1916   SRCC 0.5670   PLCC 0.5707
+    macro                     SRCC 0.7087   PLCC 0.7123   worst 0.5670 on spaq
+    within-ref                SRCC 0.7616   (16 references)
+
+  latency batch 1     147.2 ms p50, 262.3 ms p95
+  throughput          4.2 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          8,192
+
+per-image scores -> clipiqa+_val.csv
+=== clipiqa+ on heldout === 06:13
+clipiqa+ on 8010 images from the val split, native resolution (higher is better)
+  0/8010
+  500/8010
+  1000/8010
+  1500/8010
+  2000/8010
+  2500/8010
+  3000/8010
+  3500/8010
+  4000/8010
+  4500/8010
+  5000/8010
+  5500/8010
+  6000/8010
+  6500/8010
+  7000/8010
+  7500/8010
+  8000/8010
+
+    agiqa3k        n   2982   SRCC 0.6833   PLCC 0.7377
+    clive          n   1162   SRCC 0.8052   PLCC 0.8323
+    csiq           n    866   SRCC 0.7194   PLCC 0.7591
+    tid2013        n   3000   SRCC 0.6318   PLCC 0.7010
+    macro                     SRCC 0.7188   PLCC 0.7641   worst 0.6318 on tid2013   (agiqa3k excluded)
+    within-ref                SRCC 0.6881   (354 references)
+
+  latency batch 1     37.8 ms p50, 126.8 ms p95
+  throughput          11.9 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          8,192
+
+per-image scores -> clipiqa+_heldout.csv
+### queue finished 06:25

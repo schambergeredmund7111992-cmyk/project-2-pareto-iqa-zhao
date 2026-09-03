@@ -1,0 +1,33 @@
+entropy on 6240 images from the val split, native resolution (higher is better)
+  0/6240
+  500/6240
+  1000/6240
+  1500/6240
+  2000/6240
+  2500/6240
+  3000/6240
+  3500/6240
+  4000/6240
+  4500/6240
+  5000/6240
+  5500/6240
+  6000/6240
+
+  111 images could not be scored and are excluded:
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00058.jpg: CUDA out of memory. Tried to allocate 30.38 GiB. GPU 0 has a total capacity of 44.31 GiB of which 13.01 GiB is free. Process 2485390 has 4.33 GiB memory in use. Process 2521164 has 1.09 GiB memory in use. Including non-PyTorch memory, this process has 25.85 GiB memory in use. Of the allocated memory 372.62 MiB is allocated by PyTorch, and 25.00 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00075.jpg: CUDA out of memory. Tried to allocate 30.38 GiB. GPU 0 has a total capacity of 44.31 GiB of which 13.01 GiB is free. Process 2485390 has 4.33 GiB memory in use. Process 2521164 has 1.09 GiB memory in use. Including non-PyTorch memory, this process has 25.85 GiB memory in use. Of the allocated memory 372.62 MiB is allocated by PyTorch, and 25.00 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00086.jpg: CUDA out of memory. Tried to allocate 30.38 GiB. GPU 0 has a total capacity of 44.31 GiB of which 13.01 GiB is free. Process 2485390 has 4.33 GiB memory in use. Process 2521164 has 1.09 GiB memory in use. Including non-PyTorch memory, this process has 25.85 GiB memory in use. Of the allocated memory 372.62 MiB is allocated by PyTorch, and 25.00 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00561.jpg: CUDA out of memory. Tried to allocate 43.04 GiB. GPU 0 has a total capacity of 44.31 GiB of which 37.56 GiB is free. Process 2485390 has 4.33 GiB memory in use. Process 2521164 has 1.09 GiB memory in use. Including non-PyTorch memory, this process has 1.30 GiB memory in use. Of the allocated memory 524.63 MiB is allocated by PyTorch, and 307.37 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00579.jpg: CUDA out of memory. Tried to allocate 43.04 GiB. GPU 0 has a total capacity of 44.31 GiB of which 37.56 GiB is free. Process 2485390 has 4.33 GiB memory in use. Process 2521164 has 1.09 GiB memory in use. Including non-PyTorch memory, this process has 1.30 GiB memory in use. Of the allocated memory 524.63 MiB is allocated by PyTorch, and 307.37 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    ... and 106 more
+
+    kadid10k       n   2000   SRCC 0.1459   PLCC 0.1066
+    koniq10k       n   2015   SRCC 0.2851   PLCC 0.2269
+    spaq           n   2114   SRCC 0.3350   PLCC 0.3712
+    macro                     SRCC 0.2553   PLCC 0.2349   worst 0.1459 on kadid10k
+    within-ref                SRCC 0.2079   (16 references)
+
+  latency batch 1     208.3 ms p50, 276.3 ms p95
+  throughput          3.3 img/s (the scoring loop, one image at a time, including image loading)
+
+per-image scores -> entropy_val.csv

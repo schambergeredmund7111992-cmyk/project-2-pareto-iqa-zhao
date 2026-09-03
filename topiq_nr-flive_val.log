@@ -1,0 +1,27 @@
+Loading pretrained model CFANet from /home/sergey/.cache/torch/hub/pyiqa/cfanet_nr_flive_res50-ded1c74e.pth
+topiq_nr-flive on 6240 images from the val split, native resolution (higher is better)
+  0/6240
+  500/6240
+  1000/6240
+  1500/6240
+  2000/6240
+  2500/6240
+  3000/6240
+  3500/6240
+  4000/6240
+  4500/6240
+  5000/6240
+  5500/6240
+  6000/6240
+
+    kadid10k       n   2000   SRCC 0.4341   PLCC 0.4717
+    koniq10k       n   2015   SRCC 0.7816   PLCC 0.8029
+    spaq           n   2225   SRCC 0.8346   PLCC 0.7664
+    macro                     SRCC 0.6834   PLCC 0.6803   worst 0.4341 on kadid10k
+    within-ref                SRCC 0.5649   (16 references)
+
+  latency batch 1     249.3 ms p50, 348.3 ms p95
+  throughput          1.4 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          45,196,934
+
+per-image scores -> topiq_nr-flive_val.csv

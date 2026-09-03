@@ -1,0 +1,27 @@
+Loading pretrained model NIMA from /home/sergey/.cache/torch/hub/pyiqa/NIMA_InceptionV2_ava-b0c77c00.pth
+nima on 6240 images from the val split, native resolution (higher is better)
+  0/6240
+  500/6240
+  1000/6240
+  1500/6240
+  2000/6240
+  2500/6240
+  3000/6240
+  3500/6240
+  4000/6240
+  4500/6240
+  5000/6240
+  5500/6240
+  6000/6240
+
+    kadid10k       n   2000   SRCC 0.4639   PLCC 0.4918
+    koniq10k       n   2015   SRCC 0.5551   PLCC 0.5867
+    spaq           n   2225   SRCC 0.6043   PLCC 0.5991
+    macro                     SRCC 0.5411   PLCC 0.5592   worst 0.4639 on kadid10k
+    within-ref                SRCC 0.5400   (16 references)
+
+  latency batch 1     170.1 ms p50, 276.8 ms p95
+  throughput          5.4 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          54,321,834
+
+per-image scores -> nima_val.csv

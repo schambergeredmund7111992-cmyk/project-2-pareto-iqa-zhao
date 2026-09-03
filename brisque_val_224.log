@@ -1,0 +1,25 @@
+brisque on 6240 images from the val split, longer side <= 224px (lower is better)
+  0/6240
+  500/6240
+  1000/6240
+  1500/6240
+  2000/6240
+  2500/6240
+  3000/6240
+  3500/6240
+  4000/6240
+  4500/6240
+  5000/6240
+  5500/6240
+  6000/6240
+
+    kadid10k       n   2000   SRCC 0.1285   PLCC 0.1518
+    koniq10k       n   2015   SRCC 0.1966   PLCC 0.1684
+    spaq           n   2225   SRCC 0.4803   PLCC 0.4560
+    macro                     SRCC 0.2684   PLCC 0.2587   worst 0.1285 on kadid10k
+    within-ref                SRCC 0.2145   (16 references)
+
+  latency batch 1     9.9 ms p50, 34.8 ms p95
+  throughput          11.2 img/s (the scoring loop, one image at a time, including image loading)
+
+per-image scores -> brisque_val_224.csv

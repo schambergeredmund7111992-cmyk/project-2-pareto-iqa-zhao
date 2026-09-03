@@ -1,0 +1,26 @@
+arniqa on 6240 images from the val split, native resolution (higher is better)
+  0/6240
+  500/6240
+  1000/6240
+  1500/6240
+  2000/6240
+  2500/6240
+  3000/6240
+  3500/6240
+  4000/6240
+  4500/6240
+  5000/6240
+  5500/6240
+  6000/6240
+
+    kadid10k       n   2000   SRCC 0.6956   PLCC 0.6951
+    koniq10k       n   2015   SRCC 0.8755   PLCC 0.8911
+    spaq           n   2225   SRCC 0.5928   PLCC 0.5893
+    macro                     SRCC 0.7213   PLCC 0.7252   worst 0.5928 on spaq
+    within-ref                SRCC 0.7509   (16 references)
+
+  latency batch 1     57.7 ms p50, 115.5 ms p95
+  throughput          3.6 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          23,512,129
+
+per-image scores -> arniqa_val.csv

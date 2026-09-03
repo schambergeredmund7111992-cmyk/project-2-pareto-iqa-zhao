@@ -1,0 +1,22 @@
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 33119.06it/s]
+Traceback (most recent call last):
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/run_pyiqa.py", line 176, in <module>
+    main()
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/run_pyiqa.py", line 54, in main
+    metric = pyiqa.create_metric(args.metric, device=device)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/pyiqa/api_helpers.py", line 15, in create_metric
+    metric = InferenceModel(metric_name, as_loss=as_loss, device=device, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/pyiqa/models/inference_model.py", line 67, in __init__
+    self.net = build_network(net_opts)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/pyiqa/archs/__init__.py", line 80, in build_network
+    net = ARCH_REGISTRY.get(network_type)(**opt)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/pyiqa/archs/fgresq_arch.py", line 160, in __init__
+    for layer in self.task_cls_clip.vision_model.encoder.layers[-2:]:
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1928, in __getattr__
+    raise AttributeError(
+AttributeError: 'CLIPVisionModel' object has no attribute 'vision_model'

@@ -1,0 +1,34 @@
+manifest -> ./split_manifest.csv
+head mlp on cached 197x768 features
+train 25083  held out 6240  (split by reference, sampling by_dataset, seed 42)
+198,657 trainable parameters
+epoch 0: loss 0.0758
+    kadid10k       n   2000   SRCC 0.7117   PLCC 0.7144
+    koniq10k       n   2015   SRCC 0.7480   PLCC 0.7834
+    spaq           n   2225   SRCC 0.8581   PLCC 0.8615
+    macro                     SRCC 0.7726   PLCC 0.7864   worst 0.7117 on kadid10k
+    within-ref                SRCC 0.8649   (16 references)
+epoch 1: loss 0.0582
+    kadid10k       n   2000   SRCC 0.7478   PLCC 0.7574
+    koniq10k       n   2015   SRCC 0.7666   PLCC 0.8037
+    spaq           n   2225   SRCC 0.8719   PLCC 0.8772
+    macro                     SRCC 0.7954   PLCC 0.8128   worst 0.7478 on kadid10k
+    within-ref                SRCC 0.8764   (16 references)
+epoch 2: loss 0.0528
+    kadid10k       n   2000   SRCC 0.7477   PLCC 0.7556
+    koniq10k       n   2015   SRCC 0.7634   PLCC 0.8032
+    spaq           n   2225   SRCC 0.8815   PLCC 0.8869
+    macro                     SRCC 0.7975   PLCC 0.8152   worst 0.7477 on kadid10k
+    within-ref                SRCC 0.8828   (16 references)
+epoch 3: loss 0.0472
+    kadid10k       n   2000   SRCC 0.7288   PLCC 0.7365
+    koniq10k       n   2015   SRCC 0.7783   PLCC 0.8171
+    spaq           n   2225   SRCC 0.8765   PLCC 0.8817
+    macro                     SRCC 0.7945   PLCC 0.8118   worst 0.7288 on kadid10k
+    within-ref                SRCC 0.8880   (16 references)
+epoch 4: loss 0.0438
+    kadid10k       n   2000   SRCC 0.6919   PLCC 0.6965
+    koniq10k       n   2015   SRCC 0.7721   PLCC 0.8143
+    spaq           n   2225   SRCC 0.8823   PLCC 0.8889
+    macro                     SRCC 0.7821   PLCC 0.7999   worst 0.6919 on kadid10k
+    within-ref                SRCC 0.8839   (16 references)

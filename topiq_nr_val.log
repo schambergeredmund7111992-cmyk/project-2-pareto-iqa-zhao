@@ -1,0 +1,35 @@
+Loading pretrained model CFANet from /home/sergey/.cache/torch/hub/pyiqa/cfanet_nr_koniq_res50-9a73138b.pth
+topiq_nr on 6240 images from the val split, native resolution (higher is better)
+  0/6240
+  500/6240
+  1000/6240
+  1500/6240
+  2000/6240
+  2500/6240
+  3000/6240
+  3500/6240
+  4000/6240
+  4500/6240
+  5000/6240
+  5500/6240
+  6000/6240
+
+  103 images could not be scored and are excluded:
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00561.jpg: CUDA out of memory. Tried to allocate 7.34 GiB. GPU 0 has a total capacity of 44.31 GiB of which 2.55 GiB is free. Process 639672 has 1.19 GiB memory in use. Including non-PyTorch memory, this process has 40.55 GiB memory in use. Of the allocated memory 25.66 GiB is allocated by PyTorch, and 14.39 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00579.jpg: CUDA out of memory. Tried to allocate 7.34 GiB. GPU 0 has a total capacity of 44.31 GiB of which 4.66 GiB is free. Process 639672 has 1.19 GiB memory in use. Including non-PyTorch memory, this process has 38.43 GiB memory in use. Of the allocated memory 26.62 GiB is allocated by PyTorch, and 11.31 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00743.jpg: CUDA out of memory. Tried to allocate 7.34 GiB. GPU 0 has a total capacity of 44.31 GiB of which 4.66 GiB is free. Process 639672 has 1.19 GiB memory in use. Including non-PyTorch memory, this process has 38.43 GiB memory in use. Of the allocated memory 27.34 GiB is allocated by PyTorch, and 10.60 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00845.jpg: CUDA out of memory. Tried to allocate 7.34 GiB. GPU 0 has a total capacity of 44.31 GiB of which 4.76 GiB is free. Process 639672 has 1.19 GiB memory in use. Including non-PyTorch memory, this process has 38.34 GiB memory in use. Of the allocated memory 23.08 GiB is allocated by PyTorch, and 14.76 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00861.jpg: CUDA out of memory. Tried to allocate 7.34 GiB. GPU 0 has a total capacity of 44.31 GiB of which 4.76 GiB is free. Process 639672 has 1.19 GiB memory in use. Including non-PyTorch memory, this process has 38.34 GiB memory in use. Of the allocated memory 25.41 GiB is allocated by PyTorch, and 12.43 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    ... and 98 more
+
+    kadid10k       n   2000   SRCC 0.4830   PLCC 0.5233
+    koniq10k       n   2015   SRCC 0.9015   PLCC 0.8996
+    spaq           n   2122   SRCC 0.4921   PLCC 0.5056
+    macro                     SRCC 0.6255   PLCC 0.6428   worst 0.4830 on kadid10k
+    within-ref                SRCC 0.5447   (16 references)
+
+  latency batch 1     93.5 ms p50, 150.7 ms p95
+  throughput          3.2 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          45,196,934
+
+per-image scores -> topiq_nr_val.csv

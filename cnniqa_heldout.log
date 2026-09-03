@@ -1,0 +1,32 @@
+Loading pretrained model CNNIQA from /home/sergey/.cache/torch/hub/pyiqa/CNNIQA_koniq10k-e6f14c91.pth
+cnniqa on 8010 images from the val split, native resolution (higher is better)
+  0/8010
+  500/8010
+  1000/8010
+  1500/8010
+  2000/8010
+  2500/8010
+  3000/8010
+  3500/8010
+  4000/8010
+  4500/8010
+  5000/8010
+  5500/8010
+  6000/8010
+  6500/8010
+  7000/8010
+  7500/8010
+  8000/8010
+
+    agiqa3k        n   2982   SRCC 0.6143   PLCC 0.7330
+    clive          n   1162   SRCC 0.6089   PLCC 0.6372
+    csiq           n    866   SRCC 0.3427   PLCC 0.4400
+    tid2013        n   3000   SRCC 0.1769   PLCC 0.3980
+    macro                     SRCC 0.3762   PLCC 0.4918   worst 0.1769 on tid2013   (agiqa3k excluded)
+    within-ref                SRCC 0.5554   (354 references)
+
+  latency batch 1     316.1 ms p50, 420.2 ms p95
+  throughput          3.1 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          729,801
+
+per-image scores -> cnniqa_heldout.csv

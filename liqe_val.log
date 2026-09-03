@@ -1,0 +1,27 @@
+Loading pretrained model LIQE from /home/sergey/.cache/torch/hub/pyiqa/liqe_koniq.pt
+liqe on 6240 images from the val split, native resolution (higher is better)
+  0/6240
+  500/6240
+  1000/6240
+  1500/6240
+  2000/6240
+  2500/6240
+  3000/6240
+  3500/6240
+  4000/6240
+  4500/6240
+  5000/6240
+  5500/6240
+  6000/6240
+
+    kadid10k       n   2000   SRCC 0.7024   PLCC 0.7036
+    koniq10k       n   2015   SRCC 0.9503   PLCC 0.9053
+    spaq           n   2225   SRCC 0.3072   PLCC 0.4120
+    macro                     SRCC 0.6533   PLCC 0.6736   worst 0.3072 on spaq
+    within-ref                SRCC 0.7854   (16 references)
+
+  latency batch 1     101.9 ms p50, 197.3 ms p95
+  throughput          3.8 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          151,277,313
+
+per-image scores -> liqe_val.csv

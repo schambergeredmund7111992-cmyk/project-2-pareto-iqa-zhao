@@ -1,0 +1,32 @@
+Loading pretrained model MUSIQ from /home/sergey/.cache/torch/hub/pyiqa/musiq_koniq_ckpt-e95806b9.pth
+musiq on 8010 images from the val split, longer side <= 224px (higher is better)
+  0/8010
+  500/8010
+  1000/8010
+  1500/8010
+  2000/8010
+  2500/8010
+  3000/8010
+  3500/8010
+  4000/8010
+  4500/8010
+  5000/8010
+  5500/8010
+  6000/8010
+  6500/8010
+  7000/8010
+  7500/8010
+  8000/8010
+
+    agiqa3k        n   2982   SRCC 0.4959   PLCC 0.5682
+    clive          n   1162   SRCC 0.6573   PLCC 0.7098
+    csiq           n    866   SRCC 0.5458   PLCC 0.6443
+    tid2013        n   3000   SRCC 0.4904   PLCC 0.5906
+    macro                     SRCC 0.5645   PLCC 0.6482   worst 0.4904 on tid2013   (agiqa3k excluded)
+    within-ref                SRCC 0.5386   (354 references)
+
+  latency batch 1     80.2 ms p50, 114.7 ms p95
+  throughput          10.8 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          27,125,825
+
+per-image scores -> musiq_heldout_224.csv

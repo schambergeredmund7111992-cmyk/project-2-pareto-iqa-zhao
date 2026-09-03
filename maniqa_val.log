@@ -1,0 +1,27 @@
+Loading pretrained model MANIQA from /home/sergey/.cache/torch/hub/pyiqa/ckpt_koniq10k.pt
+maniqa on 6240 images from the val split, native resolution (higher is better)
+  0/6240
+  500/6240
+  1000/6240
+  1500/6240
+  2000/6240
+  2500/6240
+  3000/6240
+  3500/6240
+  4000/6240
+  4500/6240
+  5000/6240
+  5500/6240
+  6000/6240
+
+    kadid10k       n   2000   SRCC 0.4290   PLCC 0.4667
+    koniq10k       n   2015   SRCC 0.8288   PLCC 0.8164
+    spaq           n   2225   SRCC 0.0867   PLCC 0.0788
+    macro                     SRCC 0.4482   PLCC 0.4540   worst 0.0867 on spaq
+    within-ref                SRCC 0.4708   (16 references)
+
+  latency batch 1     525.6 ms p50, 812.5 ms p95
+  throughput          1.4 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          135,747,530
+
+per-image scores -> maniqa_val.csv

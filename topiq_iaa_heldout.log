@@ -1,0 +1,32 @@
+Loading pretrained model CFANet from /home/sergey/.cache/torch/hub/pyiqa/cfanet_iaa_ava_swin-393b41b4.pth
+topiq_iaa on 8010 images from the val split, native resolution (higher is better)
+  0/8010
+  500/8010
+  1000/8010
+  1500/8010
+  2000/8010
+  2500/8010
+  3000/8010
+  3500/8010
+  4000/8010
+  4500/8010
+  5000/8010
+  5500/8010
+  6000/8010
+  6500/8010
+  7000/8010
+  7500/8010
+  8000/8010
+
+    agiqa3k        n   2982   SRCC 0.7035   PLCC 0.7553
+    clive          n   1162   SRCC 0.6256   PLCC 0.6287
+    csiq           n    866   SRCC 0.5722   PLCC 0.6385
+    tid2013        n   3000   SRCC 0.3727   PLCC 0.4959
+    macro                     SRCC 0.5235   PLCC 0.5877   worst 0.3727 on tid2013   (agiqa3k excluded)
+    within-ref                SRCC 0.6777   (354 references)
+
+  latency batch 1     23.1 ms p50, 59.7 ms p95
+  throughput          33.3 img/s (the scoring loop, one image at a time, including image loading)
+  parameters          123,456,110
+
+per-image scores -> topiq_iaa_heldout.csv

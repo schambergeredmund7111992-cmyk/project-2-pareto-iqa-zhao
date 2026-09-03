@@ -1,0 +1,42 @@
+brisque on 6240 images from the val split, native resolution (lower is better)
+  0/6240
+  500/6240
+  1000/6240
+  1500/6240
+  2000/6240
+  2500/6240
+  3000/6240
+  3500/6240
+  4000/6240
+  4500/6240
+  5000/6240
+  5500/6240
+  6000/6240
+
+    kadid10k       n   2000   SRCC 0.3023   PLCC 0.3364
+    koniq10k       n   2015   SRCC 0.2490   PLCC 0.2036
+    spaq           n   2225   SRCC 0.0543   PLCC 0.1178
+    macro                     SRCC 0.2019   PLCC 0.2193   worst 0.0543 on spaq
+    within-ref                SRCC 0.3309   (16 references)
+
+  latency batch 1     192.8 ms p50, 243.9 ms p95
+  throughput          3.4 img/s (the scoring loop, one image at a time, including image loading)
+
+per-image scores -> brisque_val.csv
+ and 525.59 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00067.jpg: CUDA out of memory. Tried to allocate 226.00 MiB. GPU 0 has a total capacity of 44.31 GiB of which 216.38 MiB is free. Process 3570546 has 39.91 GiB memory in use. Process 3768659 has 792.00 MiB memory in use. Including non-PyTorch memory, this process has 1.92 GiB memory in use. Process 3796584 has 1.45 GiB memory in use. Of the allocated memory 909.11 MiB is allocated by PyTorch, and 554.89 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00075.jpg: CUDA out of memory. Tried to allocate 304.00 MiB. GPU 0 has a total capacity of 44.31 GiB of which 216.38 MiB is free. Process 3570546 has 39.91 GiB memory in use. Process 3768659 has 792.00 MiB memory in use. Including non-PyTorch memory, this process has 1.92 GiB memory in use. Process 3796584 has 1.45 GiB memory in use. Of the allocated memory 1.20 GiB is allocated by PyTorch, and 239.90 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00561.jpg: CUDA out of memory. Tried to allocate 432.00 MiB. GPU 0 has a total capacity of 44.31 GiB of which 54.38 MiB is free. Process 3570546 has 39.91 GiB memory in use. Process 3768659 has 792.00 MiB memory in use. Including non-PyTorch memory, this process has 2.66 GiB memory in use. Process 3796584 has 884.00 MiB memory in use. Of the allocated memory 1.69 GiB is allocated by PyTorch, and 492.11 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00579.jpg: CUDA out of memory. Tried to allocate 432.00 MiB. GPU 0 has a total capacity of 44.31 GiB of which 430.38 MiB is free. Process 3570546 has 39.91 GiB memory in use. Process 3768659 has 792.00 MiB memory in use. Including non-PyTorch memory, this process has 2.29 GiB memory in use. Process 3796584 has 884.00 MiB memory in use. Of the allocated memory 1.27 GiB is allocated by PyTorch, and 546.53 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+    ... and 54 more
+
+    kadid10k       n   2000   SRCC 0.3023   PLCC 0.3364
+    koniq10k       n   2015   SRCC 0.2490   PLCC 0.2036
+    spaq           n   2166   SRCC 0.0452   PLCC 0.1089
+    macro                     SRCC 0.1988   PLCC 0.2163   worst 0.0452 on spaq
+    within-ref                SRCC 0.3309   (16 references)
+
+  latency batch 1     253.3 ms p50, 397.3 ms p95
+  throughput          2.0 img/s (the scoring loop, one image at a time, including image loading)
+
+per-image scores -> brisque_val.csv
