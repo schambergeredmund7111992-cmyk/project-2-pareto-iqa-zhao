@@ -17,4 +17,4 @@ dependencies = [
 # refuses to guess which of them to install. Naming them keeps `pip install -e .`
 # working and makes them importable from anywhere.
 [tool.setuptools]
-py-modules = ["benchmark", "dataset", "download_data", "prepare_data", "train"]
+py-modules = ["benchmark", "benchmark_pyiqa", "cache_features", "dataset", "download_data", "prepare_data", "qalign", "qrealign", "run_pyiqa", "train", "train_attnpool", "train_cached"]

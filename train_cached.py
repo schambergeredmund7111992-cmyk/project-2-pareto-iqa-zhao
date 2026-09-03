@@ -1,7 +1,7 @@
 """Train a head on cached frozen features.
 
-    python cache_features.py --data ./train.csv --out ./features_clip-base.npy
-    python train_cached.py --data ./train.csv --features ./features_clip-base.npy --head mlp
+    python cache_features.py --data ./data/train.csv --out ./features_clip-base.npy
+    python train_cached.py --data ./data/train.csv --features ./features_clip-base.npy --head mlp
 
 The encoder is frozen, so its output is a constant of the CSV. Reading it back
 costs nothing and the epoch becomes a few seconds of matrix multiplies instead

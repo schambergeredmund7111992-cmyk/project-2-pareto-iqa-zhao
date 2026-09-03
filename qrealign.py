@@ -23,19 +23,24 @@ warnings.filterwarnings("ignore")
 
 ROOT = "/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa"
 
-HELDOUT_CSV = f"{ROOT}/heldout.csv"
+# Outputs live under results/qrealign/ in the repository layout.
+HELDOUT_CSV = f"{ROOT}/data/heldout.csv"
+
+RESULTS_DIR = f"{ROOT}/results/qrealign"
 
 OUTPUT_PREDICTIONS_CSV = (
-    f"{ROOT}/qrealign_heldout_predictions.csv"
+    f"{RESULTS_DIR}/qrealign_heldout_predictions.csv"
 )
 
 OUTPUT_RESULTS_CSV = (
-    f"{ROOT}/qrealign_project02_results.csv"
+    f"{RESULTS_DIR}/qrealign_project02_results.csv"
 )
 
 OUTPUT_METADATA_JSON = (
-    f"{ROOT}/qrealign_project02_metadata.json"
+    f"{RESULTS_DIR}/qrealign_project02_metadata.json"
 )
+
+os.makedirs(RESULTS_DIR, exist_ok=True)
 
 DATA_ROOT = "/home/sergey/iqa-data"
 

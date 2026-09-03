@@ -6,7 +6,7 @@ of JPEG decoding into a few seconds of matrix multiplies. It does not touch
 the cost we report — benchmark.py still measures the full image -> encoder ->
 head path, which is what a serving system would actually run.
 
-    python cache_features.py --data ./train.csv --out ./features_clip-base.npy
+    python cache_features.py --data ./data/train.csv --out ./features_clip-base.npy
 
 Stored as float16: the head layer-norms its input immediately, so the extra
 precision buys nothing and the file halves.

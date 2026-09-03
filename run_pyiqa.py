@@ -1,6 +1,6 @@
 """Score the validation split with a pyiqa metric, and time what it costs.
 
-    python run_pyiqa.py --metric dbcnn --data ./train.csv --manifest ./split_manifest.csv
+    python run_pyiqa.py --metric dbcnn --data ./data/train.csv --manifest ./data/split_manifest.csv
 
 Two halves, the same two the project reports for its own designs. Accuracy is
 SRCC and PLCC per dataset, their macro and the worst of them — pooled across

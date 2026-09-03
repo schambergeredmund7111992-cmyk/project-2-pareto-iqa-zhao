@@ -8,11 +8,12 @@
 set -u
 GPU=${1:?usage: rerun_all.sh <gpu> <metric> [metric ...]}
 shift
+mkdir -p results/pyiqa
 for m in "$@"; do
-  for split in "train.csv split_manifest.csv val" "heldout.csv heldout_manifest.csv heldout"; do
+  for split in "data/train.csv data/split_manifest.csv val" "data/heldout.csv data/heldout_manifest.csv heldout"; do
     set -- $split
     echo "=== $m on $3 ==="
     CUDA_VISIBLE_DEVICES=$GPU python run_pyiqa.py --metric "$m" --data "./$1" \
-      --manifest "./$2" --max-side 224 --out "${m}_${3}_224.csv" 2>&1 | tee "${m}_${3}_224.log"
+      --manifest "./$2" --max-side 224 --out "results/pyiqa/${m}_${3}_224.csv" 2>&1 | tee "results/pyiqa/${m}_${3}_224.log"
   done
 done

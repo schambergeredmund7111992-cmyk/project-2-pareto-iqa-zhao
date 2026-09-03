@@ -38,19 +38,24 @@ ROOT = (
     "zhao/project-2-pareto-iqa"
 )
 
-HELDOUT_CSV = f"{ROOT}/heldout.csv"
+# Outputs live under results/qalign/ in the repository layout.
+HELDOUT_CSV = f"{ROOT}/data/heldout.csv"
+
+RESULTS_DIR = f"{ROOT}/results/qalign"
 
 OUTPUT_PREDICTIONS_CSV = (
-    f"{ROOT}/qalign_heldout_predictions.csv"
+    f"{RESULTS_DIR}/qalign_heldout_predictions.csv"
 )
 
 OUTPUT_RESULTS_CSV = (
-    f"{ROOT}/qalign_project02_results.csv"
+    f"{RESULTS_DIR}/qalign_project02_results.csv"
 )
 
 OUTPUT_METADATA_JSON = (
-    f"{ROOT}/qalign_project02_metadata.json"
+    f"{RESULTS_DIR}/qalign_project02_metadata.json"
 )
+
+os.makedirs(RESULTS_DIR, exist_ok=True)
 
 # Actual image dataset root
 DATA_ROOT = (

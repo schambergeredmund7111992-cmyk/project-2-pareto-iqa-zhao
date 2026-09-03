@@ -19,6 +19,7 @@ counter, which is then reported as n/a rather than guessed at.
 from __future__ import annotations
 
 import argparse
+import os
 import time
 
 import numpy as np
@@ -102,7 +103,7 @@ def main():
     ap.add_argument("--batch-size", type=int, default=16)
     ap.add_argument("--iterations", type=int, default=30)
     ap.add_argument("--device", default="cuda")
-    ap.add_argument("--out", default="cost_pyiqa.csv")
+    ap.add_argument("--out", default="results/cost/cost_pyiqa.csv")
     args = ap.parse_args()
 
     device = torch.device(args.device)
@@ -138,6 +139,7 @@ def main():
         if device.type == "cuda":
             torch.cuda.empty_cache()
 
+    os.makedirs(os.path.dirname(args.out), exist_ok=True)
     pd.DataFrame(rows).to_csv(args.out, index=False)
     print(f"-> {args.out}")
 
