@@ -1,28 +1,0 @@
-Downloading: "https://hf-mirror.com/chaofengc/IQA-PyTorch-Weights/resolve/main/brisque_svm_weights.pth" to /home/sergey/.cache/torch/hub/pyiqa/brisque_svm_weights.pth
-
-  0%|          | 0.00/112k [00:00<?, ?B/s]100%|██████████| 112k/112k [00:00<00:00, 299kB/s]100%|██████████| 112k/112k [00:00<00:00, 299kB/s]
-brisque on 6240 images from the val split (lower is better)
-  0/6240
-  500/6240
-  1000/6240
-  1500/6240
-  2000/6240
-  2500/6240
-  3000/6240
-  3500/6240
-  4000/6240
-  4500/6240
-  5000/6240
-  5500/6240
-  6000/6240
-
-    kadid10k       n   2000   SRCC 0.3023   PLCC 0.3364
-    koniq10k       n   2015   SRCC 0.2490   PLCC 0.2036
-    spaq           n   2225   SRCC 0.0543   PLCC 0.1178
-    macro                     SRCC 0.2019   PLCC 0.2193   worst 0.0543 on spaq
-    within-ref                SRCC 0.3309   (16 references)
-
-  latency batch 1     88.3 ms p50, 118.5 ms p95
-  throughput          6.6 img/s (the scoring loop, one image at a time, including image loading)
-
-per-image scores -> brisque_scores.csv

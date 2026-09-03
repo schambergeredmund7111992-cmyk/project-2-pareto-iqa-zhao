@@ -1,357 +1,0 @@
-=== dbcnn on val === 08:26
-Loading pretrained model SCNN from /home/sergey/.cache/torch/hub/pyiqa/DBCNN_scnn-7ea73d75.pth
-Loading pretrained model DBCNN from /home/sergey/.cache/torch/hub/pyiqa/DBCNN_KonIQ10k-2de81c0a.pth
-dbcnn on 6240 images from the val split, native resolution (higher is better)
-  0/6240
-  500/6240
-  1000/6240
-  1500/6240
-  2000/6240
-  2500/6240
-  3000/6240
-  3500/6240
-  4000/6240
-  4500/6240
-  5000/6240
-  5500/6240
-  6000/6240
-
-  2158 images could not be scored and are excluded:
-    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00004.jpg: CUDA out of memory. Tried to allocate 2.82 GiB. GPU 0 has a total capacity of 44.31 GiB of which 879.81 MiB is free. Process 2813807 has 934.00 MiB memory in use. Process 2826793 has 6.31 GiB memory in use. Process 2838531 has 2.25 GiB memory in use. Including non-PyTorch memory, this process has 916.00 MiB memory in use. Process 2838743 has 788.00 MiB memory in use. Process 2876965 has 4.41 GiB memory in use. Process 2890916 has 11.49 GiB memory in use. Process 2890913 has 4.67 GiB memory in use. Process 2890918 has 11.49 GiB memory in use. Of the allocated memory 338.57 MiB is allocated by PyTorch, and 73.43 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
-    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00024.jpg: CUDA out of memory. Tried to allocate 2.90 GiB. GPU 0 has a total capacity of 44.31 GiB of which 875.81 MiB is free. Process 2813807 has 934.00 MiB memory in use. Process 2826793 has 6.31 GiB memory in use. Process 2838531 has 2.25 GiB memory in use. Including non-PyTorch memory, this process has 920.00 MiB memory in use. Process 2838743 has 788.00 MiB memory in use. Process 2876965 has 4.41 GiB memory in use. Process 2890916 has 11.49 GiB memory in use. Process 2890913 has 4.67 GiB memory in use. Process 2890918 has 11.49 GiB memory in use. Of the allocated memory 346.59 MiB is allocated by PyTorch, and 69.41 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
-    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00042.jpg: CUDA out of memory. Tried to allocate 3.10 GiB. GPU 0 has a total capacity of 44.31 GiB of which 865.81 MiB is free. Process 2813807 has 934.00 MiB memory in use. Process 2826793 has 6.31 GiB memory in use. Process 2838531 has 2.25 GiB memory in use. Including non-PyTorch memory, this process has 930.00 MiB memory in use. Process 2838743 has 788.00 MiB memory in use. Process 2876965 has 4.41 GiB memory in use. Process 2890916 has 11.49 GiB memory in use. Process 2890913 has 4.67 GiB memory in use. Process 2890918 has 11.49 GiB memory in use. Of the allocated memory 364.50 MiB is allocated by PyTorch, and 61.50 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
-    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00044.jpg: CUDA out of memory. Tried to allocate 2.91 GiB. GPU 0 has a total capacity of 44.31 GiB of which 917.81 MiB is free. Process 2813807 has 934.00 MiB memory in use. Process 2826793 has 6.31 GiB memory in use. Process 2838531 has 2.25 GiB memory in use. Including non-PyTorch memory, this process has 878.00 MiB memory in use. Process 2838743 has 788.00 MiB memory in use. Process 2876965 has 4.41 GiB memory in use. Process 2890916 has 11.49 GiB memory in use. Process 2890913 has 4.67 GiB memory in use. Process 2890918 has 11.49 GiB memory in use. Of the allocated memory 346.96 MiB is allocated by PyTorch, and 27.04 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
-    /home/sergey/iqa-data/spaq/SPAQ/TestImage/00058.jpg: CUDA out of memory. Tried to allocate 3.80 GiB. GPU 0 has a total capacity of 44.31 GiB of which 839.81 MiB is free. Process 2813807 has 934.00 MiB memory in use. Process 2826793 has 6.31 GiB memory in use. Process 2838531 has 2.25 GiB memory in use. Including non-PyTorch memory, this process has 956.00 MiB memory in use. Process 2838743 has 788.00 MiB memory in use. Process 2876965 has 4.41 GiB memory in use. Process 2890916 has 11.49 GiB memory in use. Process 2890913 has 4.67 GiB memory in use. Process 2890918 has 11.49 GiB memory in use. Of the allocated memory 431.93 MiB is allocated by PyTorch, and 20.07 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
-    ... and 2153 more
-
-    kadid10k       n   2000   SRCC 0.4160   PLCC 0.4457
-    koniq10k       n   2015   SRCC 0.8691   PLCC 0.8639
-    spaq           n     67   SRCC 0.4943   PLCC 0.6122
-    macro                     SRCC 0.5931   PLCC 0.6406   worst 0.4160 on kadid10k
-    within-ref                SRCC 0.4902   (16 references)
-
-  latency batch 1     379.2 ms p50, 596.5 ms p95
-  throughput          0.7 img/s (the scoring loop, one image at a time, including image loading)
-  parameters          15,311,345
-
-per-image scores -> dbcnn_val.csv
---- dbcnn_heldout.csv exists, skipping
-=== hyperiqa on val === 09:59
-Loading pretrained model HyperNet from /home/sergey/.cache/torch/hub/pyiqa/HyperIQA-resnet50-koniq10k-c96c41b1.pth
-hyperiqa on 6240 images from the val split, native resolution (higher is better)
-  0/6240
-  500/6240
-  1000/6240
-  1500/6240
-  2000/6240
-  2500/6240
-  3000/6240
-  3500/6240
-  4000/6240
-  4500/6240
-  5000/6240
-  5500/6240
-  6000/6240
-
-    kadid10k       n   2000   SRCC 0.4301   PLCC 0.4841
-    koniq10k       n   2015   SRCC 0.8765   PLCC 0.8737
-    spaq           n   2225   SRCC 0.1888   PLCC 0.1858
-    macro                     SRCC 0.4985   PLCC 0.5145   worst 0.1888 on spaq
-    within-ref                SRCC 0.5075   (16 references)
-
-  latency batch 1     338.4 ms p50, 477.9 ms p95
-  throughput          2.5 img/s (the scoring loop, one image at a time, including image loading)
-  parameters          27,375,369
-
-per-image scores -> hyperiqa_val.csv
---- hyperiqa_heldout.csv exists, skipping
-=== musiq on val === 10:42
-Loading pretrained model MUSIQ from /home/sergey/.cache/torch/hub/pyiqa/musiq_koniq_ckpt-e95806b9.pth
-musiq on 6240 images from the val split, native resolution (higher is better)
-  0/6240
-  500/6240
-  1000/6240
-  1500/6240
-  2000/6240
-  2500/6240
-  3000/6240
-  3500/6240
-  4000/6240
-  4500/6240
-  5000/6240
-  5500/6240
-  6000/6240
-
-    kadid10k       n   2000   SRCC 0.4779   PLCC 0.5394
-    koniq10k       n   2015   SRCC 0.9456   PLCC 0.9574
-    spaq           n   2225   SRCC 0.6077   PLCC 0.5484
-    macro                     SRCC 0.6771   PLCC 0.6818   worst 0.4779 on kadid10k
-    within-ref                SRCC 0.6065   (16 references)
-
-  latency batch 1     339.8 ms p50, 473.3 ms p95
-  throughput          1.0 img/s (the scoring loop, one image at a time, including image loading)
-  parameters          27,125,825
-
-per-image scores -> musiq_val.csv
---- musiq_heldout.csv exists, skipping
-=== brisque on val === 12:24
-brisque on 6240 images from the val split, native resolution (lower is better)
-  0/6240
-  500/6240
-  1000/6240
-  1500/6240
-  2000/6240
-  2500/6240
-  3000/6240
-  3500/6240
-  4000/6240
-  4500/6240
-  5000/6240
-  5500/6240
-  6000/6240
-
-    kadid10k       n   2000   SRCC 0.3023   PLCC 0.3364
-    koniq10k       n   2015   SRCC 0.2490   PLCC 0.2036
-    spaq           n   2225   SRCC 0.0543   PLCC 0.1178
-    macro                     SRCC 0.2019   PLCC 0.2193   worst 0.0543 on spaq
-    within-ref                SRCC 0.3309   (16 references)
-
-  latency batch 1     192.8 ms p50, 243.9 ms p95
-  throughput          3.4 img/s (the scoring loop, one image at a time, including image loading)
-
-per-image scores -> brisque_val.csv
-=== brisque on heldout === 12:54
-brisque on 8010 images from the val split, native resolution (lower is better)
-  0/8010
-  500/8010
-  1000/8010
-  1500/8010
-  2000/8010
-  2500/8010
-  3000/8010
-  3500/8010
-  4000/8010
-  4500/8010
-  5000/8010
-  5500/8010
-  6000/8010
-  6500/8010
-  7000/8010
-  7500/8010
-  8000/8010
-
-  3 images could not be scored and are excluded:
-    /home/sergey/iqa-data/agiqa3k/DALLE2_normal_253.jpg: Expected image with non zero variance of pixel values
-    /home/sergey/iqa-data/agiqa3k/glide_normal_101.jpg: Expected image with non zero variance of pixel values
-    /home/sergey/iqa-data/agiqa3k/glide_normal_263.jpg: Expected image with non zero variance of pixel values
-
-    agiqa3k        n   2979   SRCC 0.4970   PLCC 0.5388
-    clive          n   1162   SRCC 0.3129   PLCC 0.3510
-    csiq           n    866   SRCC 0.5563   PLCC 0.7011
-    tid2013        n   3000   SRCC 0.3672   PLCC 0.4317
-    macro                     SRCC 0.4121   PLCC 0.4946   worst 0.3129 on clive   (agiqa3k excluded)
-    within-ref                SRCC 0.4676   (354 references)
-
-  latency batch 1     132.7 ms p50, 167.1 ms p95
-  throughput          7.3 img/s (the scoring loop, one image at a time, including image loading)
-
-per-image scores -> brisque_heldout.csv
-=== niqe on val === 13:13
-niqe on 6240 images from the val split, native resolution (lower is better)
-  0/6240
-  500/6240
-  1000/6240
-  1500/6240
-  2000/6240
-  2500/6240
-  3000/6240
-  3500/6240
-  4000/6240
-  4500/6240
-  5000/6240
-  5500/6240
-  6000/6240
-
-    kadid10k       n   2000   SRCC 0.3512   PLCC 0.3510
-    koniq10k       n   2015   SRCC 0.5328   PLCC 0.4853
-    spaq           n   2225   SRCC 0.5102   PLCC 0.4820
-    macro                     SRCC 0.4647   PLCC 0.4394   worst 0.3512 on kadid10k
-    within-ref                SRCC 0.3659   (16 references)
-
-  latency batch 1     217.0 ms p50, 291.2 ms p95
-  throughput          3.7 img/s (the scoring loop, one image at a time, including image loading)
-
-per-image scores -> niqe_val.csv
-=== niqe on heldout === 13:41
-niqe on 8010 images from the val split, native resolution (lower is better)
-  0/8010
-  500/8010
-  1000/8010
-  1500/8010
-  2000/8010
-  2500/8010
-  3000/8010
-  3500/8010
-  4000/8010
-  4500/8010
-  5000/8010
-  5500/8010
-/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/pyiqa/matlab_utils/functions.py:173: UserWarning: cov(): degrees of freedom is <= 0. Correction should be strictly less than the number of observations. (Triggered internally at /pytorch/aten/src/ATen/native/Correlation.cpp:116.)
-  return torch.cov(tensor, correction=correction)
-/home/sergey/pareto-optimal/zhao/project-2-pareto-iqa/.venv/lib/python3.12/site-packages/pyiqa/archs/niqe_arch.py:161: UserWarning: torch.linalg.svd: During SVD computation with the selected cusolver driver, batches 0 failed to converge. A more accurate method will be used to compute the SVD as a fallback. Check doc at https://pytorch.org/docs/stable/generated/torch.linalg.svd.html (Triggered internally at /pytorch/aten/src/ATen/native/cuda/linalg/BatchLinearAlgebraLib.cpp:690.)
-  invcov_param = torch.linalg.pinv((cov_pris_param + cov_distparam) / 2)
-  6000/8010
-  6500/8010
-  7000/8010
-  7500/8010
-  8000/8010
-
-  3 images could not be scored and are excluded:
-    /home/sergey/iqa-data/agiqa3k/DALLE2_normal_253.jpg: linalg.svd: (Batch element 0): The algorithm failed to converge because the input matrix is ill-conditioned or has too many repeated singular values (error code: 36).
-    /home/sergey/iqa-data/agiqa3k/glide_normal_101.jpg: linalg.svd: (Batch element 0): The algorithm failed to converge because the input matrix is ill-conditioned or has too many repeated singular values (error code: 36).
-    /home/sergey/iqa-data/agiqa3k/glide_normal_263.jpg: linalg.svd: (Batch element 0): The algorithm failed to converge because the input matrix is ill-conditioned or has too many repeated singular values (error code: 36).
-
-    agiqa3k        n   2979   SRCC 0.5332   PLCC 0.5273
-    clive          n   1162   SRCC 0.4493   PLCC 0.4790
-    csiq           n    866   SRCC 0.6279   PLCC 0.7149
-    tid2013        n   3000   SRCC 0.3121   PLCC 0.3669
-    macro                     SRCC 0.4631   PLCC 0.5203   worst 0.3121 on tid2013   (agiqa3k excluded)
-    within-ref                SRCC 0.4916   (354 references)
-
-  latency batch 1     124.2 ms p50, 203.2 ms p95
-  throughput          4.9 img/s (the scoring loop, one image at a time, including image loading)
-
-per-image scores -> niqe_heldout.csv
-=== piqe on val === 14:09
-piqe on 6240 images from the val split, native resolution (lower is better)
-  0/6240
-  500/6240
-  1000/6240
-  1500/6240
-  2000/6240
-  2500/6240
-  3000/6240
-  3500/6240
-  4000/6240
-  4500/6240
-  5000/6240
-  5500/6240
-  6000/6240
-
-    kadid10k       n   2000   SRCC 0.1928   PLCC 0.2404
-    koniq10k       n   2015   SRCC -0.2397   PLCC -0.2035
-    spaq           n   2225   SRCC -0.1525   PLCC -0.0733
-    macro                     SRCC -0.0664   PLCC -0.0121   worst -0.2397 on koniq10k
-    within-ref                SRCC 0.1994   (16 references)
-
-  latency batch 1     62.6 ms p50, 100.3 ms p95
-  throughput          6.3 img/s (the scoring loop, one image at a time, including image loading)
-
-per-image scores -> piqe_val.csv
-=== piqe on heldout === 14:26
-piqe on 8010 images from the val split, native resolution (lower is better)
-  0/8010
-  500/8010
-  1000/8010
-  1500/8010
-  2000/8010
-  2500/8010
-  3000/8010
-  3500/8010
-  4000/8010
-  4500/8010
-  5000/8010
-  5500/8010
-  6000/8010
-  6500/8010
-  7000/8010
-  7500/8010
-  8000/8010
-
-    agiqa3k        n   2979   SRCC 0.3336   PLCC 0.3833
-    clive          n   1162   SRCC 0.1025   PLCC 0.1633
-    csiq           n    866   SRCC 0.5146   PLCC 0.6407
-    tid2013        n   3000   SRCC 0.3635   PLCC 0.4605
-    macro                     SRCC 0.3269   PLCC 0.4215   worst 0.1025 on clive   (agiqa3k excluded)
-    within-ref                SRCC 0.3431   (354 references)
-
-  latency batch 1     51.7 ms p50, 92.1 ms p95
-  throughput          27.9 img/s (the scoring loop, one image at a time, including image loading)
-
-per-image scores -> piqe_heldout.csv
-=== nrqm on val === 14:30
-Downloading: "https://hf-mirror.com/chaofengc/IQA-PyTorch-Weights/resolve/main/NRQM_model.mat" to /home/sergey/.cache/torch/hub/pyiqa/NRQM_model.mat
-
-  0%|          | 0.00/66.2M [00:00<?, ?B/s]  0%|          | 128k/66.2M [00:00<04:37, 249kB/s]  1%|          | 640k/66.2M [00:00<00:53, 1.29MB/s]  3%|▎         | 1.88M/66.2M [00:00<00:17, 3.96MB/s]  5%|▍         | 3.12M/66.2M [00:00<00:10, 6.07MB/s]  7%|▋         | 4.38M/66.2M [00:00<00:08, 7.67MB/s]  8%|▊         | 5.62M/66.2M [00:01<00:07, 8.86MB/s] 10%|█         | 6.88M/66.2M [00:01<00:06, 9.60MB/s] 12%|█▏        | 8.12M/66.2M [00:01<00:05, 10.4MB/s] 14%|█▍        | 9.25M/66.2M [00:01<00:13, 4.33MB/s] 16%|█▌        | 10.5M/66.2M [00:02<00:10, 5.45MB/s] 18%|█▊        | 11.8M/66.2M [00:02<00:08, 6.58MB/s] 20%|█▉        | 13.0M/66.2M [00:02<00:07, 7.64MB/s] 22%|██▏       | 14.2M/66.2M [00:02<00:06, 8.59MB/s] 23%|██▎       | 15.5M/66.2M [00:02<00:05, 9.40MB/s] 25%|██▌       | 16.8M/66.2M [00:02<00:05, 10.1MB/s] 27%|██▋       | 18.0M/66.2M [00:02<00:04, 10.6MB/s] 29%|██▉       | 19.2M/66.2M [00:02<00:04, 10.9MB/s] 31%|███       | 20.5M/66.2M [00:02<00:04, 11.2MB/s] 33%|███▎      | 21.8M/66.2M [00:03<00:04, 11.4MB/s] 35%|███▍      | 23.0M/66.2M [00:03<00:03, 11.6MB/s] 37%|███▋      | 24.2M/66.2M [00:03<00:03, 11.7MB/s] 39%|███▊      | 25.5M/66.2M [00:03<00:03, 11.8MB/s] 40%|████      | 26.8M/66.2M [00:03<00:03, 11.8MB/s] 42%|████▏     | 28.0M/66.2M [00:03<00:03, 11.9MB/s] 44%|████▍     | 29.2M/66.2M [00:03<00:03, 11.9MB/s] 46%|████▌     | 30.5M/66.2M [00:03<00:03, 11.9MB/s] 48%|████▊     | 31.8M/66.2M [00:03<00:03, 11.9MB/s] 50%|████▉     | 33.0M/66.2M [00:04<00:02, 11.8MB/s] 52%|█████▏    | 34.2M/66.2M [00:04<00:02, 11.9MB/s] 54%|█████▎    | 35.5M/66.2M [00:04<00:02, 12.0MB/s] 56%|█████▌    | 36.8M/66.2M [00:04<00:02, 11.9MB/s] 57%|█████▋    | 38.0M/66.2M [00:04<00:02, 11.9MB/s] 59%|█████▉    | 39.2M/66.2M [00:04<00:02, 11.9MB/s] 61%|██████    | 40.5M/66.2M [00:04<00:02, 12.0MB/s] 63%|██████▎   | 41.8M/66.2M [00:04<00:02, 11.9MB/s] 65%|██████▍   | 43.0M/66.2M [00:04<00:02, 11.9MB/s] 67%|██████▋   | 44.2M/66.2M [00:05<00:01, 11.9MB/s] 69%|██████▊   | 45.5M/66.2M [00:05<00:01, 11.9MB/s] 71%|███████   | 46.8M/66.2M [00:05<00:01, 11.9MB/s] 73%|███████▎  | 48.0M/66.2M [00:05<00:01, 11.9MB/s] 74%|███████▍  | 49.2M/66.2M [00:05<00:01, 11.9MB/s] 76%|███████▋  | 50.5M/66.2M [00:05<00:01, 11.9MB/s] 78%|███████▊  | 51.8M/66.2M [00:05<00:01, 11.9MB/s] 80%|████████  | 53.0M/66.2M [00:05<00:01, 11.9MB/s] 82%|████████▏ | 54.2M/66.2M [00:05<00:01, 11.9MB/s] 84%|████████▍ | 55.5M/66.2M [00:05<00:00, 11.9MB/s] 86%|████████▌ | 56.8M/66.2M [00:06<00:00, 11.8MB/s] 88%|████████▊ | 58.0M/66.2M [00:06<00:00, 12.0MB/s] 89%|████████▉ | 59.2M/66.2M [00:06<00:00, 11.9MB/s] 91%|█████████▏| 60.5M/66.2M [00:06<00:00, 12.0MB/s] 93%|█████████▎| 61.8M/66.2M [00:06<00:00, 11.9MB/s] 95%|█████████▌| 63.0M/66.2M [00:06<00:00, 12.0MB/s] 97%|█████████▋| 64.2M/66.2M [00:06<00:00, 11.9MB/s] 99%|█████████▉| 65.5M/66.2M [00:06<00:00, 12.0MB/s]100%|██████████| 66.2M/66.2M [00:06<00:00, 10.0MB/s]
-nrqm on 6240 images from the val split, native resolution (higher is better)
-  0/6240
-  500/6240
-  1000/6240
-  1500/6240
-  2000/6240
-  2500/6240
-  3000/6240
-  3500/6240
-  4000/6240
-  4500/6240
-  5000/6240
-  5500/6240
-  6000/6240
-
-    kadid10k       n   2000   SRCC 0.1535   PLCC 0.2169
-    koniq10k       n   2015   SRCC 0.4611   PLCC 0.5026
-    spaq           n   2225   SRCC 0.2195   PLCC 0.1810
-    macro                     SRCC 0.2781   PLCC 0.3002   worst 0.1535 on kadid10k
-    within-ref                SRCC 0.1674   (16 references)
-
-  latency batch 1     761.4 ms p50, 1037.8 ms p95
-  throughput          0.1 img/s (the scoring loop, one image at a time, including image loading)
-
-per-image scores -> nrqm_val.csv
-=== nrqm on heldout === 02:10
-nrqm on 8010 images from the val split, native resolution (higher is better)
-  0/8010
-  500/8010
-  1000/8010
-  1500/8010
-  2000/8010
-  2500/8010
-  3000/8010
-  3500/8010
-  4000/8010
-  4500/8010
-  5000/8010
-  5500/8010
-  6000/8010
-  6500/8010
-  7000/8010
-  7500/8010
-  8000/8010
-
-  3 images could not be scored and are excluded:
-    /home/sergey/iqa-data/agiqa3k/DALLE2_normal_253.jpg: torch.linalg.solve: (Batch element 0): The solver failed because the input matrix is singular.
-    /home/sergey/iqa-data/agiqa3k/glide_normal_101.jpg: torch.linalg.solve: (Batch element 0): The solver failed because the input matrix is singular.
-    /home/sergey/iqa-data/agiqa3k/glide_normal_263.jpg: torch.linalg.solve: (Batch element 0): The solver failed because the input matrix is singular.
-
-    agiqa3k        n   2979   SRCC 0.5298   PLCC 0.5958
-    clive          n   1162   SRCC 0.3109   PLCC 0.4267
-    csiq           n    866   SRCC 0.4257   PLCC 0.5619
-    tid2013        n   3000   SRCC 0.3490   PLCC 0.4795
-    macro                     SRCC 0.3619   PLCC 0.4894   worst 0.3109 on clive   (agiqa3k excluded)
-    within-ref                SRCC 0.5148   (354 references)
-
-  latency batch 1     761.5 ms p50, 913.3 ms p95
-  throughput          0.9 img/s (the scoring loop, one image at a time, including image loading)
-
-per-image scores -> nrqm_heldout.csv
-=== pi on val === 04:41
-pi on 6240 images from the val split, native resolution (lower is better)
-  0/6240
-  500/6240
-  1000/6240
-  1500/6240
-  2000/6240
-  2500/6240
-  3000/6240
-  3500/6240
-  4000/6240
